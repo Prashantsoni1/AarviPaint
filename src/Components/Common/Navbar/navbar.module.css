@@ -1,0 +1,102 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.appBar {
+  background-color: white !important;
+  box-shadow: none !important;
+  padding:0 !important;
+  margin: 0;
+  width: 100%;
+}
+
+.toolbarContent {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  background-color: white;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.active {
+  color: #9333EA;
+}
+
+.cartBadge {
+  cursor: pointer;
+}
+
+.cartBadge span {
+  background-color: #9333EA;
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.closeButton {
+  color: #333;
+}
+
+@media (max-width: 900px) {
+  .appBar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+} */
