@@ -52,7 +52,7 @@ const BookPaint = () => {
           <Typography variant="h4" gutterBottom>
             Easy Steps to Book Paint Online
           </Typography>
-{/* sjdfs */}
+
           {/* Steps Section */}
           {steps.map((step, index) => (
             <Grid 
