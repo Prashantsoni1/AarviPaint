@@ -7,6 +7,8 @@ import BookPaint from "../../Components/mini_sections/bookpaint";
 import Visualizer from "../../Components/mini_sections/Visalizer/Visualizer";
 import CustomCarousel from "../../Components/mini_sections/carousel";
 import Download from "../../Components/mini_sections/download/download";
+import Request from "../../Components/mini_sections/request-form/reaquest";
+import Footer from "../../Components/Common/Footer/footer";
 
 const Home = () => {
 
@@ -29,10 +31,12 @@ const Home = () => {
       <Visualizer/>
       <ParallaxComponent/>
       <Download/>
+      <Request/>
       <CustomCarousel items={carouselItems} autoPlay={false} slidesToSlide={slidesToSlide} />
       
-
+      <Footer/>
     </ThemeProvider>
+
    
     )
   };

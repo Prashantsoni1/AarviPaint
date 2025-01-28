@@ -45,14 +45,14 @@ const InfiniteImageSlider = () => {
         slidesToSlide={slidesToSlide}
       />
 
-      <div className={styles.appstore}>
+      {/* <div className={styles.appstore}>
         <a href="#">
           <img src={playstore} className={styles.stores} />
         </a>
         <a href="#">
           <img src={appstore} className={styles.stores} />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

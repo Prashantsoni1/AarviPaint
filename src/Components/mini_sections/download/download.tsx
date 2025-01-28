@@ -1,5 +1,4 @@
 import React from "react";
-import downloadbg from "../../../assets/downloads/download_bg.png";
 import Styles from "./download.module.css";
 import playstore from "../../../assets/images/playstore.png";
 import appstore from "../../../assets/images/appstore.png";
