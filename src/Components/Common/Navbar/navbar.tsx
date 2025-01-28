@@ -13,7 +13,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import logo from '../../../assets/logo.png'
+import logo from '../../../assets/logo.png';
+
 interface Props {
   /**
    * Injected by the documentation to work in an iframe.
@@ -23,7 +24,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Services','Products','Contact'];
+const navItems = ['Home', 'About', 'Services', 'Products', 'Contact'];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -54,9 +55,18 @@ export default function DrawerAppBar(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex'}}>
+    <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: 'white', color: 'black' }}>
+      <AppBar
+        component="nav"
+        sx={{
+          backgroundColor: 'white',
+          color: 'black',
+          position: 'sticky',
+          top: 0, // This makes the AppBar sticky at the top
+          zIndex: 1100, // Ensure it's on top of other content
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -72,7 +82,7 @@ export default function DrawerAppBar(props: Props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-             <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (

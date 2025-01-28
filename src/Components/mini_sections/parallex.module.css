@@ -8,7 +8,7 @@
     /*  this is where the magic happens:  */
     background-attachment: fixed;
   
-    background-image: url("/home/my/Desktop/AARVI PAINTS/my-react-app/src/assets/bg1.png");
+    background-image: url("../../assets/bg1.png");
     background-position: center;
     background-size: cover;
     color: var(--color);
@@ -23,15 +23,12 @@
     flex-wrap: wrap;
   
     padding: 6rem 0;
-    background-image: url("/home/my/Desktop/AARVI PAINTS/my-react-app/src/assets/bg2.png");
+    background-image: url("../../assets/bg2.png");
     gap: 1.6em;
   }
 
   .parallax-container3 {
-    flex-direction: row;
-    flex-wrap: wrap;
-  
-    padding: 6rem 0;
-    background-image: url("/home/my/Desktop/AARVI PAINTS/my-react-app/src/assets/bg3.png");
-    gap: 1.6em;
+   
+    background-image: url("../../assets/bg3.png");
+
   }

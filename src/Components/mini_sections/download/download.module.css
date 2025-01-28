@@ -1,0 +1,47 @@
+.download_main{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.download_section {
+  width: 100%;
+  margin: 150px auto 50px;
+  background-image: linear-gradient(127deg, #01010199, #01010199),
+    url(../../../assets/downloads/download_bg.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  padding: 50px 0 50px 50px;
+  border-radius: 20px;
+
+}
+.background {
+  width: 100%;
+ 
+}
+.download_content {
+  width: 50%;
+  color: #ffffff;
+  text-align: center;
+ 
+}
+.download_content p{
+  width: 80%;
+  margin: auto;
+}
+.appstore {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  
+}
+.appstore img {
+    width: 150px;
+    margin: auto;
+    margin-top: 30px;
+  }
+.side_phone{
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    width: 480px;
+}

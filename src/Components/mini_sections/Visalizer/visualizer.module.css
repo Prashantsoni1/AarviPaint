@@ -1,0 +1,50 @@
+.visulizer_main{
+    background-image: linear-gradient(127deg, #01010199 , #01010199 ) ,url(../../../assets/visualizer/Visual.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding: 40px 0;
+}
+.heading{
+    font-size: 40px;
+    font-weight: 400;
+    width: 60%;
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+    line-height: 45px;
+    
+}
+.Title{
+    font-size: 14px;
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px auto;
+}
+.visualizer {
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+}
+.arrow{ 
+    width: 250px;
+}
+.arrow2{
+    transform: rotate(180deg);
+    width: 250px;
+}
+.visual{
+ 
+}
+.visual img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 10px;
+}

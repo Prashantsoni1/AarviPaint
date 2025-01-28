@@ -1,20 +1,23 @@
-// import styles from './bookpaint.module.css'
-import { Box, Grid, Typography, Button } from '@mui/material';
-import manPainting from '../../assets/man_painting.png';
+import styles from './bookpaint.module.css'
+// import { Box, Grid, Typography, Button } from '@mui/material';
+import manPainting from '../../assets/booking_img.png';
 import image1 from '../../assets/house 1 (1).png';
 import image2 from '../../assets/painting-brush 1.png';
 import image3 from '../../assets/pantone 1 (1).png';
 
 const steps = [
   {
+    count:1,
     image: image1,
     description: 'Choose your house for painting with a variety of designs and options.',
   },
   {
+    count:2,
     image: image2,
     description: 'Select the painting tools and materials needed for the job.',
   },
   {
+    count:3,
     image: image3,
     description: 'Finalize the colors and patterns to personalize your space.',
   },
@@ -22,21 +25,28 @@ const steps = [
 
 const BookPaint = () => {
   return (
-    <Box sx={{
+    
+    <>
+    {/* <Box sx={{
         display: 'flex',       
         justifyContent: 'center', 
         alignItems: 'center',    
-        height: '50vh',       
+        margin:'80px 0'      
       }}>
-    <Box sx={{ padding: '2rem', backgroundColor: '#f9f9f9' ,border: '2px solid',borderColor: 'primary.main', borderRadius: '8px',  width:'80%'}}>
-      {/* Main Container */}
+    <Box   sx={{
+   
+    background: 'linear-gradient(127deg, rgba(231,232,237,1) 0%, rgba(242,192,142,1) 69%, rgba(235,172,109,1) 100%)',
+    border: '2px solid',
+    borderColor: 'primary.main',
+    borderRadius: '8px',
+    width: '80%',
+  }}>
       <Grid container spacing={4} alignItems="center">
-        {/* Left Section */}
         <Grid item xs={12} md={6} sx={{ textAlign: 'center' }}>
           <img 
             src={manPainting} 
             alt="Man Painting" 
-            style={{ width: '100%', maxWidth: '400px' }} 
+            style={{ width: '100%' }} 
           />
           <Button 
             variant="contained" 
@@ -47,13 +57,11 @@ const BookPaint = () => {
           </Button>
         </Grid>
 
-        {/* Right Section */}
         <Grid item xs={12} md={6}>
           <Typography variant="h4" gutterBottom>
             Easy Steps to Book Paint Online
           </Typography>
 
-          {/* Steps Section */}
           {steps.map((step, index) => (
             <Grid 
               container 
@@ -89,7 +97,46 @@ const BookPaint = () => {
         </Grid>
       </Grid>
     </Box>
-    </Box>
+    </Box> */}
+
+
+
+
+
+    <div className={styles.main_bg}>
+        
+        <img 
+            src={manPainting} 
+            alt="Man Painting" 
+            className={styles.service_img}
+          />
+
+        <div className={styles.booking_step}>
+          <p className={styles.booking_heading}>Easy Steps to Book Paint Online</p>
+
+          <div className={styles.booking_steps_contain}>
+          {steps.map((step, index) => (
+            <div className={styles.booking_step_container}>
+              <div className={styles.booking_step_icon_count}>
+              <img 
+                    src={step.image} 
+                    alt={`Step ${index + 1}`} 
+                    style={{ width: '100%', maxWidth: '50px', height: 'auto' }} 
+                  />
+                  <div className={styles.booking_count}>
+                  {step.count}
+                  </div>
+              </div>
+              <p>{step.description}</p>
+            </div>
+            ))}
+          </div>
+        </div>
+        
+    </div>
+
+
+    </>
   );
 };
 
