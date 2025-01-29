@@ -2,9 +2,7 @@ import React from "react";
 import styles from "./slider.module.css";
 import image1 from "../../assets/banners/Interior (1) 1.png";
 import image2 from "../../assets/banners/Interior 1.png";
-import playstore from "../../assets/images/playstore.png";
-import appstore from "../../assets/images/appstore.png";
-import CustomCarousel from "./carousel"; // Assuming CustomCarousel is properly imported
+import CustomCarousel from "./carousel"; 
 
 const InfiniteImageSlider = () => {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -13,14 +11,12 @@ const InfiniteImageSlider = () => {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setActiveStep((prevStep) => (prevStep + 1) % images.length);
-    }, 5000); // Change interval for smooth transition
+    }, 5000); 
 
     return () => {
-      clearInterval(timer); // Clear interval on component unmount
+      clearInterval(timer);
     };
   }, [images.length]);
-
-  // Create an array of images to be used in the CustomCarousel
   const carouselItems = images.map((image, index) => (
     <div key={index}>
       <img
@@ -44,15 +40,6 @@ const InfiniteImageSlider = () => {
         autoPlay={false}
         slidesToSlide={slidesToSlide}
       />
-
-      {/* <div className={styles.appstore}>
-        <a href="#">
-          <img src={playstore} className={styles.stores} />
-        </a>
-        <a href="#">
-          <img src={appstore} className={styles.stores} />
-        </a>
-      </div> */}
     </div>
   );
 };

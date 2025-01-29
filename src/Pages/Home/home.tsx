@@ -9,6 +9,7 @@ import CustomCarousel from "../../Components/mini_sections/carousel";
 import Download from "../../Components/mini_sections/download/download";
 import Request from "../../Components/mini_sections/request-form/reaquest";
 import Footer from "../../Components/Common/Footer/footer";
+import Gellery from "../../Components/mini_sections/gellery/gellery"
 
 const Home = () => {
 
@@ -30,6 +31,7 @@ const Home = () => {
       <BookPaint/>
       <Visualizer/>
       <ParallaxComponent/>
+      <Gellery/>
       <Download/>
       <Request/>
       <CustomCarousel items={carouselItems} autoPlay={false} slidesToSlide={slidesToSlide} />
