@@ -1,0 +1,35 @@
+.gellery_main {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+.gellery_main h1 {
+  color: #000000;
+  font-size: 75px;
+  margin: 0;
+}
+.gellery_main h3 {
+  color: #525252;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.gellery_slide {
+  width: 70%;
+}
+.slider-image {
+  width: 275px;
+}
+.brouser_container img {
+  position: absolute;
+  width: 75%;
+  top: 0;
+  left: -20%;
+  transform: rotate(-6deg);
+}
+.heading {
+    margin-left: 20px;
+}

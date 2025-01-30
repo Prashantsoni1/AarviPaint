@@ -1,26 +1,25 @@
 import React from "react";
-import Styles from "./gellery.module.css";
+import Styles from "./brouser.module.css";
 import CustomCarousel from "../../mini_sections/carousel";
-import gellery1 from "../../../assets/gellery/gellery1.png";
-import gellery2 from "../../../assets/gellery/gellery2.png";
-import gellery3 from "../../../assets/gellery/gellery3.png";
-import gellery4 from "../../../assets/gellery/gellery4.png";
-import gellery5 from "../../../assets/gellery/gellery5.png";
-import gellery6 from "../../../assets/gellery/gellery6.png";
-import gellery7 from "../../../assets/gellery/gellery7.png";
-import gellery8 from "../../../assets/gellery/gellery8.png";
+import brouser from "../../../assets/brouser/b1.png";
+import brouser2 from "../../../assets/brouser/b2.png";
+import brouser3 from "../../../assets/brouser/b3.png";
+import brouser4 from "../../../assets/brouser/b4.png";
+import brouser5 from "../../../assets/brouser/b5.png";
+import brouser6 from "../../../assets/brouser/b6.png";
+import brouser7 from "../../../assets/brouser/b7.png";
+import bg from "../../../assets/images/bg.png";
 
-const Gellery = () => {
+const Brouser = () => {
   const [activeStep, setActiveStep] = React.useState(0);
   const images = [
-    gellery1,
-    gellery2,
-    gellery3,
-    gellery4,
-    gellery5,
-    gellery6,
-    gellery7,
-    gellery8,
+    brouser,
+    brouser2,
+    brouser3,
+    brouser4,
+    brouser5,
+    brouser6,
+    brouser7,
   ];
 
   React.useEffect(() => {
@@ -33,7 +32,7 @@ const Gellery = () => {
     };
   }, [images.length]);
   const carouselItems = images.map((image, index) => (
-    <div key={index} style={{marginBottom:"20px"}}>
+    <div key={index}>
       <img
         src={image}
         alt={`Slide ${index + 1}`}
@@ -43,15 +42,15 @@ const Gellery = () => {
   ));
 
   const slidesToSlide = {
-    desktop: 4,
+    desktop: 3,
     tablet: 2,
     mobile: 1,
   };
   return (
     <>
       <section className={Styles.gellery_main}>
-        <div className={Styles.heading}>
-        <h1>Gellery</h1>
+        <div className={Styles.brouser_container}>
+          <img src={bg} alt="" />
         </div>
         <div className={Styles.gellery_slide}>
           <CustomCarousel
@@ -60,9 +59,14 @@ const Gellery = () => {
             slidesToSlide={slidesToSlide}
           />
         </div>
+        <div className={Styles.heading}>
+            <h3>Download</h3>
+          <h1>Our</h1>
+          <h1>Brochure</h1>
+        </div>
       </section>
     </>
   );
 };
 
-export default Gellery;
+export default Brouser;

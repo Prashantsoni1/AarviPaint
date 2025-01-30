@@ -18,7 +18,7 @@ const InfiniteImageSlider = () => {
     };
   }, [images.length]);
   const carouselItems = images.map((image, index) => (
-    <div key={index}>
+    <div key={index} style={{marginBottom:"20px"}}>
       <img
         src={image}
         alt={`Slide ${index + 1}`}

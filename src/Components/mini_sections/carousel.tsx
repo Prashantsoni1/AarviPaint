@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import CustomButtonGroup from "./carouselbutton";
 
 interface CustomCarouselProps {
   items: React.ReactNode[]; // Array of items to display in the carousel
@@ -36,17 +37,18 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({
       draggable={true}
       showDots={true}
       responsive={responsive}
-      ssr={true} // Render carousel on server-side
       infinite={true}
       autoPlay={autoPlay}
       autoPlaySpeed={5000}
       keyBoardControl={true}
-      customTransition="transform 0.7s ease-in-out" // Smooth slide transition
-      transitionDuration={700} // Transition duration (in ms)
+      customTransition="transform 0.9s ease-in-out"
+      transitionDuration={900}
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
+      customButtonGroup={<CustomButtonGroup />}
+      arrows={false}
     >
       {items.map((item, index) => (
         <div key={index}>{item}</div>
