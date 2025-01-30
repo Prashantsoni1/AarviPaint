@@ -1,0 +1,26 @@
+.gellery_main{
+    background-image: url(../../../assets/images/footer.png);
+    padding: 50px 0 30px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.gellery_main h1{
+    color: #fff;
+    font-size: 75px;
+    margin: 0;
+}
+.gellery_slide{
+    width: 90%;
+}
+.slider-image{
+    width: 275px;
+}
+.heading{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 70px;
+    top: 0;
+    bottom: 0;
+
+}

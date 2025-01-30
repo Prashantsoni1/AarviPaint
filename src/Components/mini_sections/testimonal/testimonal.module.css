@@ -1,0 +1,55 @@
+.gellery_main {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+}
+.main_testimonial{
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 275px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+.main_testimonial img{
+  width: 275px;
+  height: 200px;
+  border-radius: 20px 20px 0 0  ;
+  object-fit: cover;
+}
+.gellery_main h1 {
+  color: #000000;
+  font-size: 75px;
+  margin: 0;
+}
+.gellery_main h3 {
+  color: #525252;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.gellery_slide {
+  width: 70%;
+}
+.slider-image {
+  width: 275px;
+}
+.brouser_container img {
+  position: absolute;
+  width: 75%;
+  top: 0;
+  left:  15%;
+  transform: rotate(-6deg);
+}
+.heading {
+    margin-left: 20px;
+    position: relative;
+}
+.testimonial_discrption{
+  text-align: center;
+  padding: 0 20px;
+}
