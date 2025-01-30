@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Styles from './visualizer.module.css'
 import arrow from '../../../assets/visualizer/arrows.png'
 import visual from '../../../assets/visualizer/visual.gif'

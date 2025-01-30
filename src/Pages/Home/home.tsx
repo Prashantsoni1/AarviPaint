@@ -10,7 +10,7 @@ import Download from "../../Components/mini_sections/download/download";
 import Request from "../../Components/mini_sections/request-form/reaquest";
 import Footer from "../../Components/Common/Footer/footer";
 import Gellery from "../../Components/mini_sections/gellery/gellery"
-
+import Calculator from "../../Components/Calculator/calculator";
 const Home = () => {
 
   const carouselItems = [
@@ -35,6 +35,7 @@ const Home = () => {
       <Download/>
       <Request/>
       <CustomCarousel items={carouselItems} autoPlay={false} slidesToSlide={slidesToSlide} />
+      <Calculator/>
       
       <Footer/>
     </ThemeProvider>
