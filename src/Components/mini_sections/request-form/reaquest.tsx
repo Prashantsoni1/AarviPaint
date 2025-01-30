@@ -5,6 +5,7 @@ import appstore from "../../../assets/images/appstore.png";
 import phone from "../../../assets/request/reques-side.png";
 
 const Request = () => {
+  
   return (
     <>
       <div className={Styles.request_main}>
@@ -27,7 +28,7 @@ const Request = () => {
             </div>
           </div>
         </div>
-        <img src={phone} alt="baclground" className={Styles.side_phone} />
+        <img src={phone} alt="baclground" className={Styles.side_phone} data-aos="zoom-in" data-aos-offset="500"/>
       </div>
     </>
   );

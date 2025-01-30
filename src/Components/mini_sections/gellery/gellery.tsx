@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Styles from "./gellery.module.css";
 import CustomCarousel from "../../mini_sections/carousel";
 import gellery1 from "../../../assets/gellery/gellery1.png";
@@ -10,7 +12,14 @@ import gellery6 from "../../../assets/gellery/gellery6.png";
 import gellery7 from "../../../assets/gellery/gellery7.png";
 import gellery8 from "../../../assets/gellery/gellery8.png";
 
-const Gellery = () => {
+const Gellery = () => { 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   const [activeStep, setActiveStep] = React.useState(0);
   const images = [
     gellery1,
@@ -38,6 +47,8 @@ const Gellery = () => {
         src={image}
         alt={`Slide ${index + 1}`}
         className={Styles["slider-image"]}
+        data-aos="zoom-in"
+        data-aos-offset="500"
       />
     </div>
   ));

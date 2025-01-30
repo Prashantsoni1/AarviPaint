@@ -9,7 +9,7 @@ const Download = () => {
     <>
       <div className={Styles.download_main}>
         <div className={Styles.download_section}>
-          <div className={Styles.download_content}>
+          <div className={Styles.download_content} data-aos="zoom-out-up" data-aos-offset="500">
             <h1>Download App Now!</h1>
             <p>
               Explore vibrant colors, visualize your space, and shop
@@ -25,7 +25,7 @@ const Download = () => {
             </div>
           </div>
         </div>
-        <img src={phone} alt="baclground" className={Styles.side_phone} />
+        <img src={phone} alt="baclground" className={Styles.side_phone} data-aos="zoom-out-up" data-aos-offset="500" />
       </div>
     </>
   );

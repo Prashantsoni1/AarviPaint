@@ -57,7 +57,7 @@ const Testimonal = () => {
 
   const carouselItems = testimonials.map((testimonial, index) => (
     <div key={index}>
-      <div className={Styles.main_testimonial}>
+      <div className={Styles.main_testimonial} data-aos="zoom-in" data-aos-offset="500">
         <img
           src={testimonial.image}
           alt={`Slide ${index + 1}`}
@@ -83,7 +83,7 @@ const Testimonal = () => {
         <div className={Styles.brouser_container}>
           <img src={bg} alt="" />
         </div>
-        <div className={Styles.heading}>
+        <div className={Styles.heading} data-aos="zoom-in" data-aos-offset="500">
           <h3>What Our</h3>
           <h1>Customer</h1>
           <h1>Say!</h1>
