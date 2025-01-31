@@ -90,7 +90,6 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 40px -17px inset, rgba(0, 0, 0, 0.3) 0px 24px 17px -46px inset;
 }
 
-
 .booking_button a::before {
   content: "";
   position: absolute;
