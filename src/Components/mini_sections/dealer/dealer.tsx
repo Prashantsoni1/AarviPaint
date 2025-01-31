@@ -15,7 +15,7 @@ const Dealer = () => {
             <h2>Find an Aarvi Paints Dealer Near You</h2>
             <p>Connect with the closest Aarvi Paints dealer for the best products and service, from our extensive network in your area.</p>
             <div className={Styles.booking_button}>
-              <a href="#">
+              <a href="/dealers">
                 <p className={Styles.booking_btn}>Find Now</p>
               </a>
             </div>

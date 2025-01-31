@@ -5,7 +5,6 @@ import image1 from "../../assets/house 1 (1).png";
 import image2 from "../../assets/painting-brush 1.png";
 import image3 from "../../assets/pantone 1 (1).png";
 import arrow from "../../assets/icons/right_arrow_blc.png";
-
 const steps = [
   {
     count: 1,
@@ -24,6 +23,7 @@ const steps = [
     description: "Finalize the colors and patterns to personalize your space.",
   },
 ];
+
 
 const BookPaint = () => {
   return (
@@ -64,8 +64,8 @@ const BookPaint = () => {
           </div>
         </div>
 
-        <div className={styles.booking_button} >
-          <a href="#">
+        <div className={styles.booking_button}>
+          <a href="/booking">
             <p className={styles.booking_btn}>Book your free site</p>{" "}
             <img src={arrow} alt="arrow" />
           </a>

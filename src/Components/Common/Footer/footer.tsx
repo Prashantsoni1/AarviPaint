@@ -10,7 +10,7 @@ import playstore from "../../../assets/images/playstore.png";
 import phone from "../../../assets/icons/phone-call (1).png";
 import email from "../../../assets/icons/mail.png";
 import location from "../../../assets/icons/location.png"
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const Item = styled(Paper)(({ theme }) => ({
@@ -44,9 +44,9 @@ const Footer = () => {
                 <h3>Services</h3>
                 <div>
                   <ul>
-                    <li>About Us</li>
-                    <li>Products</li>
-                    <li>Calcultor</li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/products">Products</Link></li>
+                    <li>Calculator</li>
                     <li>Terms & Condition</li>
                     <li>FAQ</li>
                   </ul>
