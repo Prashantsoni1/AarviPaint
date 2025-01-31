@@ -1,0 +1,92 @@
+.Deal_main {
+  display: flex;
+  align-items: center;
+  background: rgb(231, 231, 231);
+  background: linear-gradient(
+    180deg,
+    rgba(231, 231, 231, 1) 0%,
+    rgba(49, 185, 255, 1) 100%
+  );
+  min-height: 300px;
+  margin: 110px 0 50px;
+  border-radius: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+.side_shop {
+  position: absolute;
+  right: 0;
+  bottom: -58px;
+  height: 415px;
+  filter: drop-shadow(10px 0px 15px rgba(0, 0, 0, 0.3));
+}
+.side_man {
+  position: absolute;
+  bottom: 0;
+  right: 117px;
+  height: 415px;
+  z-index: 1;
+  filter: drop-shadow(10px 0px 15px rgba(0, 0, 0, 0.3));
+}
+.Deal_content h2 {
+  font-size: 28px;
+  margin:0 !important;
+  font-weight: normal;
+}
+.Deal_content p {
+  width: 60%;
+}
+.booking_button a {
+    background: #ffffff ;
+    border: 1px solid #000000;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: black;
+    justify-content: center;
+    border-radius: 50px;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .booking_button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100px;
+    height: 100%;
+    background: url("../../../assets/logotop.png") ; /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s ease-in-out;
+    z-index: 0;
+  }
+  
+  .booking_button a:hover::before {
+    transform: translateX(200%);
+    
+  }
+  
+  .booking_button a:hover {
+    color: black;
+    box-shadow: #0000004d 4px 4px 12px;
+    background: linear-gradient(
+      157deg,
+      rgba(231, 232, 237, 1) 18%,
+      rgba(242, 192, 142, 1) 75%,
+      rgba(235, 172, 109, 1) 100%
+    );
+  }
+  
+  .booking_button a p {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
