@@ -9,7 +9,7 @@ import {
     CardContent,
 } from "@mui/material";
 import "@fontsource/rubik-doodle-shadow";
-import "@fontsource/poppins"; 
+import "@fontsource/poppins";
 import interiorWallPaint from "../../assets/calculator/interior_Wall_Paint.png";
 import exterior from "../../assets/calculator/Exterior_Paint.png";
 import colorGuide from "../../assets/calculator/Color_Guide.png";
@@ -30,14 +30,25 @@ const Calculator = () => {
                     variant="h3"
                     color="black"
                     gutterBottom
-                    sx={{ fontWeight: 400, mb: 3 , fontFamily: 'Poppins',fontSize: 25 }}
+                    sx={{ fontWeight: 400, fontFamily: 'Poppins', fontSize: 25 }}
                 >
                     Plan Your Perfect Paint Budget
                 </Typography>
+                {/* Line below the heading */}
+                <Box
+                    sx={{
+                        width: "420px", // Adjust width of the line
+                        height: "2px",  // Thickness of the line
+                        backgroundColor: "black", // Color of the line
+                        margin: "0 auto", // Centers the line
+                        borderRadius: "2px", // Optional: rounded edges
+                        marginBottom: 3
+                    }}
+                />
                 <Typography
                     variant="h6"
                     color="text.secondary"
-                    sx={{ maxWidth: "800px", mx: "auto", mb: 6 , fontFamily: 'Poppins',fontSize: 18 }}
+                    sx={{ maxWidth: "800px", mx: "auto", mb: 6, fontFamily: 'Poppins', fontSize: 18 }}
                 >
                     Take the guesswork out of painting costs. Measure, choose, and
                     calculate effortlessly to design a budget that fits your vision and
@@ -55,7 +66,7 @@ const Calculator = () => {
                                 display: "flex",
                                 flexDirection: "column",
                                 overflow: "hidden",
-                                borderRadius: 2, 
+                                borderRadius: 2,
                             }}
                         >
                             {/* Image */}
@@ -120,41 +131,4 @@ const Calculator = () => {
 };
 
 export default Calculator;
-
-
-
-// import React from "react";
-// import interiorWallPaint from '../../assets/calculator/interior_Wall_Paint.png';
-// import exterior from '../../assets/calculator/Exterior_Paint.png';
-// import colorGuide from '../../assets/calculator/Color_Guide.png';
-
-// const images = [
-//     { src: interiorWallPaint, alt: "Interior Wall Paint" },
-//     { src: exterior, alt: "Exterior Paint" },
-//     { src: colorGuide, alt: "Color Guide" }
-// ];
-
-// const Calculator: React.FC = () => {
-//     return (
-//         <>
-//             <div>
-//                 <h3>Plan your perfect paint budget</h3>
-//                 <p>
-//                     Take the guesswork out of painting costs. Measure, choose, and calculate
-//                     effortlessly to design a budget that fits your vision and space. Transform
-//                     your walls with confidence!
-//                 </p>
-
-//                 {/* Image Section */}
-//                 <div style={{ display: "flex", gap: "10px", marginTop: "20px" }}>
-//                     {images.map((image, index) => (
-//                         <img key={index} src={image.src} alt={image.alt} style={{ width: "200px", height: "150px" }} />
-//                     ))}
-//                 </div>
-//             </div>
-//         </>
-//     );
-// };
-
-// export default Calculator;
 
