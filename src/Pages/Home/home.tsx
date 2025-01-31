@@ -13,6 +13,7 @@ import Gellery from "../../Components/mini_sections/gellery/gellery";
 import Brouser from "../../Components/mini_sections/brouser/brouser";
 import Testimonal from "../../Components/mini_sections/testimonal/testimonal"
 import Calculator from "../../Components/Calculator/calculator";
+import MobileNavbar from "../../Components/Common/BottomNavbar/bottomNavbar";
 const Home = () => {
 
     return (
@@ -29,6 +30,8 @@ const Home = () => {
       <Testimonal/>
       <Request/>
       <Footer/>
+      <MobileNavbar/>
+
     </ThemeProvider>
 
    

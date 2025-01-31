@@ -104,7 +104,6 @@ const Calculator = () => {
                                         "linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.1))",
                                 }}
                             />
-
                             {/* Card Content (Optional) */}
                             <CardContent
                                 sx={{
@@ -115,7 +114,7 @@ const Calculator = () => {
                                     textAlign: "center",
                                 }}
                             >
-                                <Box className={styles.caculator_button}>
+                                <Box className={`${styles.caculator_button} ${styles.caculator_button_with_shadow}`} >
                                     <a href="#">
                                         <p className={styles.caculator_btn}>{image.title}</p>
                                         <img src={arrow} alt="arrow" />
