@@ -28,78 +28,7 @@ const steps = [
 const BookPaint = () => {
   return (
     <>
-      {/* <Box sx={{
-        display: 'flex',       
-        justifyContent: 'center', 
-        alignItems: 'center',    
-        margin:'80px 0'      
-      }}>
-    <Box   sx={{
-   
-    background: 'linear-gradient(127deg, rgba(231,232,237,1) 0%, rgba(242,192,142,1) 69%, rgba(235,172,109,1) 100%)',
-    border: '2px solid',
-    borderColor: 'primary.main',
-    borderRadius: '8px',
-    width: '80%',
-  }}>
-      <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} md={6} sx={{ textAlign: 'center' }}>
-          <img 
-            src={manPainting} 
-            alt="Man Painting" 
-            style={{ width: '100%' }} 
-          />
-          <Button 
-            variant="contained" 
-            color="primary" 
-            sx={{ marginTop: '1rem' }}
-          >
-            Book your free site
-          </Button>
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-          <Typography variant="h4" gutterBottom>
-            Easy Steps to Book Paint Online
-          </Typography>
-
-          {steps.map((step, index) => (
-            <Grid 
-              container 
-              alignItems="center" 
-              spacing={2} 
-              key={index} 
-              sx={{ marginBottom: '1rem' }}
-            >
-              <Grid item>
-                <Box 
-                  sx={{
-                    width: '50px',
-                    height: '50px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <img 
-                    src={step.image} 
-                    alt={`Step ${index + 1}`} 
-                    style={{ width: '100%', maxWidth: '50px', height: 'auto' }} 
-                  />
-                </Box>
-              </Grid>
-              <Grid item>
-                <Typography variant="body1">
-                  {step.description}
-                </Typography>
-              </Grid>
-            </Grid>
-          ))}
-        </Grid>
-      </Grid>
-    </Box>
-    </Box> */}
-
+      
       <div className={styles.main_bg}>
         <img
           src={manPainting}
@@ -115,8 +44,8 @@ const BookPaint = () => {
 
             <div className={styles.booking_steps_contain}>
               {steps.map((step, index) => (
-                <div className={styles.booking_step_container}>
-                  <div className={styles.booking_step_icon_count}>
+                <div className={styles.booking_step_container} data-aos="zoom-in" data-aos-offset="500">
+                  <div className={styles.booking_step_icon_count} >
                     <img
                       src={step.image}
                       alt={`Step ${index + 1}`}
@@ -135,7 +64,7 @@ const BookPaint = () => {
           </div>
         </div>
 
-        <div className={styles.booking_button}>
+        <div className={styles.booking_button} >
           <a href="#">
             <p className={styles.booking_btn}>Book your free site</p>{" "}
             <img src={arrow} alt="arrow" />

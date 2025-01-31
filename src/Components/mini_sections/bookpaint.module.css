@@ -8,22 +8,22 @@
   margin: 0;
   display: flex;
   align-items: center;
-  margin: 80px auto !important;
+  margin: 60px auto !important;
   background: linear-gradient(
     157deg,
     rgba(231, 232, 237, 1) 18%,
     rgba(242, 192, 142, 1) 75%,
     rgba(235, 172, 109, 1) 100%
   );
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .service_img {
   padding: 0;
   margin: 0;
   width: 35%;
-}
+} 
 .booking_step {
   width: 65%;
-  padding-right: 20pxz;
 }
 .booking_heading {
   text-align: center;

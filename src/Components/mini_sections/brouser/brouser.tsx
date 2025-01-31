@@ -32,7 +32,7 @@ const Brouser = () => {
     };
   }, [images.length]);
   const carouselItems = images.map((image, index) => (
-    <div key={index}>
+    <div key={index} data-aos="zoom-in" data-aos-offset="500">
       <img
         src={image}
         alt={`Slide ${index + 1}`}
@@ -59,7 +59,7 @@ const Brouser = () => {
             slidesToSlide={slidesToSlide}
           />
         </div>
-        <div className={Styles.heading}>
+        <div className={Styles.heading} data-aos="zoom-in" data-aos-offset="500" >
             <h3>Download</h3>
           <h1>Our</h1>
           <h1>Brochure</h1>
