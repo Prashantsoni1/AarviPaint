@@ -11,3 +11,11 @@ export interface SignUpData {
     isWhatsApp: boolean;
     lookingAs: string;
 }
+ export interface requestForm {
+    name: string;
+    email: string;
+    phone: string;
+    postalCode: string;
+    message: string;
+  }
+  

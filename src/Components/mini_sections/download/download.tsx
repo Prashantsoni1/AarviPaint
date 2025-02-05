@@ -5,15 +5,18 @@ import appstore from "../../../assets/images/appstore.png";
 import phone from "../../../assets/downloads/app-img.png";
 
 const Download = () => {
+  const contentData ={
+    heading : "Download App Now!",
+    paragraph: "Explore vibrant colors, visualize your space, and shop effortlessly. Transform your home with ease—download today!",
+}
   return (
     <>
       <div className={Styles.download_main}>
         <div className={Styles.download_section}>
           <div className={Styles.download_content} data-aos="zoom-out-up" data-aos-offset="500">
-            <h1>Download App Now!</h1>
+            <h1>{contentData.heading}</h1>
             <p>
-              Explore vibrant colors, visualize your space, and shop
-              effortlessly. Transform your home with ease—download today!
+              {contentData.paragraph}
             </p>
             <div className={Styles.appstore}>
               <a href="#">

@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState ,FormEvent} from "react";
 import Styles from "./request.module.css";
 import playstore from "../../../assets/images/playstore.png";
 import appstore from "../../../assets/images/appstore.png";
 import phone from "../../../assets/request/reques-side.png";
-
+import { requestForm } from "../../../types";
+import { requestQuote } from "../../../api/requestQuote";
 const Request = () => {
-  // Step 1: Create a state to manage form data
-  const [formData, setFormData] = useState({
+ 
+  const [formData, setFormData] = useState<requestForm>({
     name: "",
     email: "",
     phone: "",
@@ -14,7 +15,6 @@ const Request = () => {
     message: "",
   });
 
-  // Step 2: Handle form input changes
   const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({
@@ -23,23 +23,23 @@ const Request = () => {
     });
   };
 
-  // Step 3: Handle form submission
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    // Log the form data (for now)
-    console.log("Form Data:", formData);
+    const response = await requestQuote(formData);
 
-
-
-    // Reset the form after submission
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      postalCode: "",
-      message: "",
-    });
+    if (response.success) {
+      console.log("Form submitted successfully:", response.data);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        postalCode: "",
+        message: "",
+      });
+    } else {
+      console.error("Error:", response.message);
+    }
   };
   return (
     <>

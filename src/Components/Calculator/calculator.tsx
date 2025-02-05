@@ -11,17 +11,21 @@ import {
 import "@fontsource/rubik-doodle-shadow";
 import "@fontsource/poppins";
 import interiorWallPaint from "../../assets/calculator/interior_Wall_Paint.png";
-import exterior from "../../assets/calculator/Exterior_Paint.png";
-import colorGuide from "../../assets/calculator/Color_Guide.png";
-import arrow from '../../assets/icons/right_arrow_blc.png'
+import exterior from "../../assets/calculator/waterProofing.png";
+import colorGuide from "../../assets/calculator/colorGuide.jpeg";
+import arrow from '../../assets/calculator/down-arrow 2.png'
 import styles from './calculator.module.css'
-const images = [
-    { src: interiorWallPaint, alt: "Interior Wall Paint", title: "Paint Budget Calculator" },
-    { src: exterior, alt: "Exterior Paint", title: "Waterproofing Calculator" },
-    { src: colorGuide, alt: "Color Guide", title: "Home Color Guide" },
-];
 
 const Calculator = () => {
+    const images = [
+        { src: interiorWallPaint, alt: "Interior Wall Paint", title: "Paint Budget Calculator" },
+        { src: exterior, alt: "Exterior Paint", title: "Waterproofing Calculator" },
+        { src: colorGuide, alt: "Color Guide", title: "Home Color Guide" },
+    ];
+    const contentData = {
+        heading: "Plan Your Perfect Paint Budget",
+        paragraph: " Take the guesswork out of painting costs. Measure, choose, and  calculate effortlessly to design a budget that fits your vision and space. Transform your walls with confidence!",
+    }
     return (
         <Container maxWidth="lg" sx={{ py: 8 }}>
             <Box textAlign="center" mb={6}>
@@ -32,16 +36,16 @@ const Calculator = () => {
                     gutterBottom
                     sx={{ fontWeight: 400, fontFamily: 'Poppins', fontSize: 25 }}
                 >
-                    Plan Your Perfect Paint Budget
+                    {contentData.heading}
                 </Typography>
                 {/* Line below the heading */}
                 <Box
                     sx={{
-                        width: "420px", // Adjust width of the line
-                        height: "2px",  // Thickness of the line
-                        backgroundColor: "black", // Color of the line
-                        margin: "0 auto", // Centers the line
-                        borderRadius: "2px", // Optional: rounded edges
+                        width: "420px",
+                        height: "2px",
+                        backgroundColor: "black",
+                        margin: "0 auto",
+                        borderRadius: "2px",
                         marginBottom: 3
                     }}
                 />
@@ -50,9 +54,7 @@ const Calculator = () => {
                     color="text.secondary"
                     sx={{ maxWidth: "800px", mx: "auto", mb: 6, fontFamily: 'Poppins', fontSize: 18 }}
                 >
-                    Take the guesswork out of painting costs. Measure, choose, and
-                    calculate effortlessly to design a budget that fits your vision and
-                    space. Transform your walls with confidence!
+                    {contentData.paragraph}
                 </Typography>
             </Box>
 
@@ -105,6 +107,23 @@ const Calculator = () => {
                                 }}
                             />
                             {/* Card Content (Optional) */}
+                            {/* <CardContent
+                                sx={{
+                                    position: "absolute",
+                                    bottom: 0,
+                                    color: "white",
+                                    width: "100%",
+                                    textAlign: "center",
+                                }}
+                            >
+                                <Box className={styles.caculator_button} >
+                                    <a href="#">
+                                        <p className={styles.caculator_btn}>{image.title}</p>
+                                        <img src={arrow} alt="arrow" />
+                                    </a>  
+                                    
+                                </Box>
+                            </CardContent> */}
                             <CardContent
                                 sx={{
                                     position: "absolute",
@@ -114,13 +133,18 @@ const Calculator = () => {
                                     textAlign: "center",
                                 }}
                             >
-                                <Box className={`${styles.caculator_button} ${styles.caculator_button_with_shadow}`} >
+                                <Box className={styles.caculator_button}>
+                                    {/* Overlay Box on the Button */}
+                                    <Box className={styles.overlay} />
+
                                     <a href="#">
                                         <p className={styles.caculator_btn}>{image.title}</p>
                                         <img src={arrow} alt="arrow" />
                                     </a>
                                 </Box>
                             </CardContent>
+
+
                         </Card>
                     </Grid>
                 ))}

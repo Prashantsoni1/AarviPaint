@@ -1,7 +1,7 @@
 
 import './App.css'
 import AllRoutes from './Routes/allroutes'
-// import Login from './Pages/Login/login'
+import Login from './Pages/Login/login'
 function App() {
  
 

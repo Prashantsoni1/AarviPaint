@@ -5,15 +5,18 @@ import phone from "../../../assets/Dealer/shop.png";
 import man from "../../../assets/Dealer/dealguid.png";
 
 const Dealer = () => {
-  
+  const contentData ={
+    heading : "Find an Aarvi Paints Dealer Near You",
+    paragraph: "Connect with the closest Aarvi Paints dealer for the best products and service, from our extensive network in your area.",
+}
   return (
     <>
      <Container>
       <div className={Styles.Deal_main}>
         <div className={Styles.Deal_section}>
           <div className={Styles.Deal_content}>
-            <h2>Find an Aarvi Paints Dealer Near You</h2>
-            <p>Connect with the closest Aarvi Paints dealer for the best products and service, from our extensive network in your area.</p>
+            <h2>{contentData.heading}</h2>
+            <p>{contentData.paragraph}</p>
             <div className={Styles.booking_button}>
               <a href="/dealers">
                 <p className={Styles.booking_btn}>Find Now</p>

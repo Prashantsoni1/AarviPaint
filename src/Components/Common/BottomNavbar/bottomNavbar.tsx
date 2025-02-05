@@ -10,7 +10,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CalculateIcon from '@mui/icons-material/Calculate';
 import ChatIcon from '@mui/icons-material/Chat';
-
+import visualizerGif from '../../../assets/navbar/visulizerGif.png'
 const MobileNavbar: React.FC = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm')); // Check if the screen is in mobile view
@@ -20,7 +20,7 @@ const MobileNavbar: React.FC = () => {
     <>
       {isMobile && (
         <Paper
-          sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
+          sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, borderRadius: '16px' }}
           elevation={3}
         >
           <BottomNavigation
@@ -29,34 +29,18 @@ const MobileNavbar: React.FC = () => {
             onChange={(event, newValue) => {
               setValue(newValue);
             }}
+            sx={{ '& .MuiBottomNavigationAction-root': { minWidth: 20 } }} // Reduce spacing
           >
-            {/* Home */}
-            <BottomNavigationAction 
-            // label="Home" 
-            icon={<HomeIcon />} />
-
-            {/* Product View */}
+            <BottomNavigationAction sx={{ minWidth: 20 }} icon={<HomeIcon />} />
+            <BottomNavigationAction sx={{ minWidth: 20 }} icon={<ShoppingCartIcon />} />
             <BottomNavigationAction
-            //   label="Product View"
-              icon={<ShoppingCartIcon />}
+              sx={{ minWidth: 50 }}
+              icon={<img src={visualizerGif} alt="GIF Icon" style={{ width: 20, height: 20 }} />}
             />
-            {/* Product View */}
-            <BottomNavigationAction
-            //   label="Product View"
-              icon={<ShoppingCartIcon />}
-            />
-
-            {/* Calculator */}
-            <BottomNavigationAction
-            //   label="Calculator"
-              icon={<CalculateIcon />}
-            />
-
-            {/* Chat */}
-            <BottomNavigationAction 
-            // label="Chat"
-             icon={<ChatIcon />} />
+            <BottomNavigationAction sx={{ minWidth: 20 }} icon={<CalculateIcon />} />
+            <BottomNavigationAction sx={{ minWidth: 20 }} icon={<ChatIcon />} />
           </BottomNavigation>
+
         </Paper>
       )}
     </>
