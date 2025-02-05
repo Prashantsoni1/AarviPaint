@@ -13,6 +13,7 @@ import Gellery from "../../Components/mini_sections/gellery/gellery";
 import Brouser from "../../Components/mini_sections/brouser/brouser";
 import Testimonal from "../../Components/mini_sections/testimonal/testimonal"
 import Calculator from "../../Components/Calculator/calculator";
+import Services from "../../Components/mini_sections/services/service"
 const Home = () => {
 
     return (
@@ -21,8 +22,9 @@ const Home = () => {
       <InfiniteImageSlider/>
       <BookPaint/>
       <Visualizer/>
-      <Dealer/>
+      <Services/>
       <ParallaxComponent/>
+      <Dealer/>
       <Gellery/>
       <Calculator/>
       <Download/>
