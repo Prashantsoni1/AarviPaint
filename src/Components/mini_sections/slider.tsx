@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./slider.module.css";
 import image1 from "../../assets/banners/Interior (1) 1.png";
 import image2 from "../../assets/banners/Interior 1.png";
+import image3 from "../../assets/banners/banner1.png";
 import CustomCarousel from "./carousel"; 
 
 const InfiniteImageSlider = () => {
   const [activeStep, setActiveStep] = React.useState(0);
-  const images = [image1, image2];
+  const images = [image1, image2, image3];
 
   React.useEffect(() => {
     const timer = setInterval(() => {

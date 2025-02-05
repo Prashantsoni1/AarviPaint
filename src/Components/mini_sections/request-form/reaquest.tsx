@@ -4,7 +4,8 @@ import playstore from "../../../assets/images/playstore.png";
 import appstore from "../../../assets/images/appstore.png";
 import phone from "../../../assets/request/reques-side.png";
 import { requestForm } from "../../../types";
-import { requestQuote } from "../../../api/requestQuote";
+import { requestQuote } from "../../../api/requestQuote";import { Container } from "@mui/material";
+
 const Request = () => {
  
   const [formData, setFormData] = useState<requestForm>({
@@ -43,6 +44,7 @@ const Request = () => {
   };
   return (
     <>
+    <Container>
       <div className={Styles.request_main}>
         <div className={Styles.request_section}>
           <div className={Styles.request_content}>
@@ -75,7 +77,7 @@ const Request = () => {
               <textarea name="message"
                 placeholder="Message"
                 value={formData.message}
-                onChange={handleInputChange} />
+                onChange={handleInputChange} rows={4} cols={50} />
               <button className={Styles.hover_button} onClick={handleSubmit}>
                 Submit
               </button>
@@ -84,6 +86,7 @@ const Request = () => {
         </div>
         <img src={phone} alt="baclground" className={Styles.side_phone} data-aos="zoom-in" data-aos-offset="500" />
       </div>
+      </Container>
     </>
   );
 };
