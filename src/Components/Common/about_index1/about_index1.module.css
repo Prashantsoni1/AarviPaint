@@ -65,17 +65,6 @@
     color: rgba(255, 255, 255, 1);
     text-shadow: 0px 4px 11px rgba(0, 0, 0, 0.76);
 }
-
-.line {
-    width: 54.230987548828125;
-    height: 1px;
-    top: 761.5px;
-    left: 884.88px;
-    border-width: 1px;
-    color: rgba(128, 128, 128, 1);
-    border: 1px solid rgba(0, 0, 0, 1)
-}
-
 .para {
     font-family: 'Poppins';
     font-weight: 500;

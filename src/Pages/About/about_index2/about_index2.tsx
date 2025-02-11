@@ -25,7 +25,11 @@ const AboutIndex2 = () => {
             </div>
 
             <div className={Styles.container2}>
+                <div className={Styles.head}>
                 <div className={Styles.heading}>ABOUT US</div>
+                <div className={Styles.line}></div>
+                </div>
+                
                 <p className={Styles.para}>Aarvi paints was established in the year 2015 as a small company with the main objective
                     of manufacturing of Water based Paints, Oil based Paints & Wall Putty and as time passed
                     we became one of the leading company in central India.</p>
