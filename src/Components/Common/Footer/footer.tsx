@@ -11,7 +11,7 @@ import phone from "../../../assets/icons/phone-call (1).png";
 import email from "../../../assets/icons/mail.png";
 import location from "../../../assets/icons/location.png"
 import { Link } from "react-router-dom";
-
+import { Facebook, Instagram, Twitter, WhatsApp } from "@mui/icons-material";
 const Footer = () => {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: "#fff",
@@ -46,9 +46,9 @@ const Footer = () => {
                   <ul>
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/products">Products</Link></li>
-                    <li>Calculator</li>
-                    <li>Terms & Condition</li>
-                    <li>FAQ</li>
+                    <li><Link to="/products">Calculator</Link></li>
+                    <li><Link to="/products">Terms & Condition</Link></li>
+                    <li><Link to="/products">FAQ</Link></li>
                   </ul>
                 </div>
               </div>
@@ -69,6 +69,12 @@ const Footer = () => {
                     <li>
                     <img src={location} alt="" />
                       <a href="#">460 Badia keema, Dudhiya , Indore 452001</a>
+                    </li>
+                    <li>
+                      <a href="#"><Facebook fontSize="large" /></a>
+                      <a href="#"> <Instagram fontSize="large" /></a>
+                      <a href="#"><Twitter fontSize="large" /></a>
+                      <a href="#"><WhatsApp fontSize="large" /></a>
                     </li>
                   </ul>
                 </div>

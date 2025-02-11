@@ -107,23 +107,6 @@ const Calculator = () => {
                                 }}
                             />
                             {/* Card Content (Optional) */}
-                            {/* <CardContent
-                                sx={{
-                                    position: "absolute",
-                                    bottom: 0,
-                                    color: "white",
-                                    width: "100%",
-                                    textAlign: "center",
-                                }}
-                            >
-                                <Box className={styles.caculator_button} >
-                                    <a href="#">
-                                        <p className={styles.caculator_btn}>{image.title}</p>
-                                        <img src={arrow} alt="arrow" />
-                                    </a>  
-                                    
-                                </Box>
-                            </CardContent> */}
                             <CardContent
                                 sx={{
                                     position: "absolute",

@@ -4,7 +4,8 @@ import playstore from "../../../assets/images/playstore.png";
 import appstore from "../../../assets/images/appstore.png";
 import phone from "../../../assets/request/reques-side.png";
 import { requestForm } from "../../../types";
-import { requestQuote } from "../../../api/requestQuote";import { Container } from "@mui/material";
+import { requestQuote } from "../../../api/allrequests";
+import { Container } from "@mui/material";
 
 const Request = () => {
  
