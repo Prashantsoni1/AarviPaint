@@ -6,14 +6,18 @@ import visual from '../../../assets/visualizer/visual.gif'
 
 const Visualizer = () => {
   
+  const contentData ={
+    heading : "Bring Your Walls to Life with Aarvi Paints' AI Visualizer",
+    paragraph: "Explore endless color possibilities for your home. Use our AI technology to preview and choose the perfect shades effortlessly!",
+}
 
   return (
     <>
     <div className={Styles.visulizer_main}>
         <div>
-            <h2 className={Styles.heading} data-aos="zoom-in">Bring Your Walls to Life with Aarvi Paints' AI Visualizer</h2>
+            <h2 className={Styles.heading} data-aos="zoom-in">{contentData.heading}</h2>
 
-            <p className={Styles.Title} data-aos="zoom-in">Explore endless color possibilities for your home. Use our AI technology to preview and choose the perfect shades effortlessly!</p>
+            <p className={Styles.Title} data-aos="zoom-in">{contentData.paragraph}</p>
 
             <div className={Styles.visualizer}>
                 <img src={arrow} alt="Arrow" className={Styles.arrow} data-aos="fade-right" data-aos-offset="500"/>

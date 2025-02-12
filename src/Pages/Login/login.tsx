@@ -3,7 +3,8 @@ import styles from "./login.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { LoginData, SignUpData } from '../../types'
-
+import { login } from "../../api/login_request/login_request";
+import { signup } from "../../api/signup_request/signup_request";
 const Login: React.FC = () => {
   const [isSignUpMode, setIsSignUpMode] = useState(false);
 
@@ -36,16 +37,18 @@ const Login: React.FC = () => {
     }
   };
 
-  const handleLoginSubmit = (e: FormEvent) => {
+  const handleLoginSubmit = async(e: FormEvent) => {
     e.preventDefault();
     console.log("Login Data:", loginData);
     // Add login API call here
+    const response = await login(loginData); // Call the API function
   };
 
-  const handleSignUpSubmit = (e: FormEvent) => {
+  const handleSignUpSubmit = async(e: FormEvent) => {
     e.preventDefault();
     console.log("Sign Up Data:", signUpData);
     // Add signup API call here
+    const response = await signup(signUpData); // Call the API function
   };
 
   return (
