@@ -12,7 +12,6 @@ const Services = () => {
   }
   return (
     <>
-
       <div className={Styles.service_main}>
         <div className={Styles.service_discription}>
         <h2 className={Styles.heading}>{contentData.heading}</h2>

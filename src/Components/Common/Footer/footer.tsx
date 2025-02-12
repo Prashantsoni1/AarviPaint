@@ -12,6 +12,7 @@ import email from "../../../assets/icons/mail.png";
 import location from "../../../assets/icons/location.png"
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, WhatsApp } from "@mui/icons-material";
+
 const Footer = () => {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: "#fff",
