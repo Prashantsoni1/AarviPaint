@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.map {
+  width: 40%;
+  height: 250px;
+}
+
+.contactDetails {
+  width: 40%;
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.heading {
+  font-family: 'Poppins';
+  font-weight: 500px;
+  font-size: 30px;
+  color: rgba(72, 71, 71, 1);
+}
+
+.line {
+  width: 30px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 1)
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.infoContainer img {
+  width: 24px;
+  height: 24px;
+}
+
+.infoContainer p {
+  font-family: 'Poppins';
+  font-weight: 300px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.infoContainer a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+

@@ -1,0 +1,67 @@
+.main {
+    position: relative;
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    padding: 30px;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading {
+    /* width: 499;
+    height: 37;
+    top: 194px;
+    left: 58px; */
+    font-family: 'Poppins';
+    font-weight: 600px;
+    font-size: 75px;
+    letter-spacing: 2%;
+    text-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.31);
+
+}
+
+.para {
+    /* width: 547;
+    height: 83;
+    top: 259px;
+    left: 66px; */
+    font-family: 'Poppins';
+    font-weight: 400px;
+    font-size: 17px;
+    /* line-height: 26px;
+    letter-spacing: 2%; */
+    text-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.textContainer {
+    position: relative;
+    /* Ensures text is above the image */
+    max-width: 40%;
+    padding-left: 50px;
+    z-index: 1;
+    /* Keeps text above the background */
+}
+
+.textContainer h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.textContainer p {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
