@@ -19,7 +19,6 @@ const Home = () => {
 
     return (
       <ThemeProvider theme={theme}>
-      <Navbar />
       <InfiniteImageSlider/>
       <BookPaint/>
       <Visualizer/>
@@ -31,8 +30,6 @@ const Home = () => {
       <Download/>
       <Brouser/>
       <Testimonal/>
-      <Request/>
-      <Footer/>
       <MobileNavbar/>
 
     </ThemeProvider>

@@ -17,14 +17,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../assets/navbar/arrvi_logo.png";
 import "@fontsource/poppins";
-
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 const StickyNavbar = () => {
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
   const location = useLocation();
-
-  const handleMenuOpen = (event:any) => {
+  const [isLogin, setIsLogin] = useState(false);
+  const handleMenuOpen = (event: any) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -187,6 +187,52 @@ const StickyNavbar = () => {
             >
               Contact
             </Typography>
+            <Typography
+              component={Link}
+              to="/login"
+              sx={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                textDecoration: 'none',
+                color: 'text.primary',
+                fontWeight: location.pathname === '/login' ? 600 : 400,
+                transition: 'color 0.3s ease',
+                '&:hover': {
+                  color: '#8224E3',
+                },
+                ...(location.pathname === '/login' && { color: '#8224E3' }),
+              }}
+            >
+              {isLogin?  (
+                <Typography
+                  variant="body1"
+                  sx={{
+                    ml: 1,
+                    fontWeight: 500,
+                    color: 'text.primary',
+                    transition: 'color 0.3s ease',
+                    '&:hover': {
+                      color: '#8224E3',
+                    },
+                  }}
+                >
+                  Hey! User
+                </Typography>
+              ):( <Typography
+                variant="body1"
+                sx={{
+                  ml: 1,
+                  fontWeight: 500,
+                  color: 'text.primary',
+                  transition: 'color 0.3s ease',
+                  '&:hover': {
+                    color: '#8224E3',
+                  },
+                }}
+              >
+                Login
+              </Typography>)}
+            </Typography>
           </Box>
         </Toolbar>
       </AppBar>
@@ -249,6 +295,9 @@ const StickyNavbar = () => {
             </Box>
             <ListItemButton component={Link} to="/contact" onClick={toggleDrawer}>
               <ListItemText primary="Contact" />
+            </ListItemButton>
+            <ListItemButton component={Link} to="/login" onClick={toggleDrawer}>
+              <ListItemText primary="Login" />
             </ListItemButton>
           </List>
         </Box>

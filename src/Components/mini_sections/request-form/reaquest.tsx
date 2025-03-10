@@ -4,8 +4,9 @@ import playstore from "../../../assets/images/playstore.png";
 import appstore from "../../../assets/images/appstore.png";
 import phone from "../../../assets/request/reques-side.png";
 import { requestForm } from "../../../types";
-import { requestQuote } from "../../../api/requestQuote";
+import { requestQuote } from "../../../api/allrequests";
 import { Container } from "@mui/material";
+
 const Request = () => {
  
   const [formData, setFormData] = useState<requestForm>({
@@ -77,7 +78,7 @@ const Request = () => {
               <textarea name="message"
                 placeholder="Message"
                 value={formData.message}
-                onChange={handleInputChange} />
+                onChange={handleInputChange} rows={4} cols={50} />
               <button className={Styles.hover_button} onClick={handleSubmit}>
                 Submit
               </button>
