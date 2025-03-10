@@ -5,6 +5,11 @@ import { faUser, faLock, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { LoginData, SignUpData } from '../../types'
 import { login } from "../../api/allrequests";
 import { signUp } from "../../api/allrequests";
+import PersonIcon from '@mui/icons-material/Person';
+import { FiUser } from 'react-icons/fi';
+import { FiLock } from 'react-icons/fi';
+import { FiMail } from 'react-icons/fi';
+import paintImg from '../../assets/login/paint.webp'
 const Login: React.FC = () => {
   const [isSignUpMode, setIsSignUpMode] = useState(false);
 
@@ -13,7 +18,6 @@ const Login: React.FC = () => {
     username: "",
     password: "",
   });
-
  
   const [signUpData, setSignUpData] = useState<SignUpData>({
     username: "",
@@ -58,11 +62,11 @@ const Login: React.FC = () => {
           <form className={styles["sign-in-form"]} onSubmit={handleLoginSubmit}>
             <div className={styles.title}>Sign in</div>
             <div className={styles["input-field"]}>
-              <FontAwesomeIcon icon={faUser} />
+              <FiUser size={30} color="black" />
               <input type="text" name="username" placeholder="Username" value={loginData.username} onChange={handleLoginChange} />
             </div>
             <div className={styles["input-field"]}>
-              <FontAwesomeIcon icon={faLock} />
+              <FiLock size={30} color="black" />
               <input type="password" name="password" placeholder="Password" value={loginData.password} onChange={handleLoginChange} />
             </div>
             <input type="submit" value="Login" className={`${styles.btn} ${styles.solid}`} />
@@ -72,21 +76,21 @@ const Login: React.FC = () => {
           <form className={styles["sign-up-form"]} onSubmit={handleSignUpSubmit}>
             <div className={styles.title}>Sign up</div>
             <div className={styles["input-field"]}>
-              <FontAwesomeIcon icon={faUser} />
+            <FiUser size={30} color="black" />
               <input type="text" name="username" placeholder="Username" value={signUpData.username} onChange={handleSignUpChange} />
             </div>
             <div className={styles["input-field"]}>
-              <FontAwesomeIcon icon={faEnvelope} />
+            <FiMail size={30} color="black" />
               <input type="email" name="email" placeholder="Email" value={signUpData.email} onChange={handleSignUpChange} />
             </div>
             <div className={styles["input-field"]}>
-              <FontAwesomeIcon icon={faLock} />
+            <FiLock size={30} color="black" />
               <input type="password" name="password" placeholder="Password" value={signUpData.password} onChange={handleSignUpChange} />
             </div>
 
             {/* Contact Number Field */}
             <div className={styles["input-field"]}>
-              <FontAwesomeIcon icon={faUser} />
+            <FiUser size={30} color="black" />
               <input type="text" name="contactNo" placeholder="Contact No" value={signUpData.contactNo} onChange={handleSignUpChange} />
             </div>
 

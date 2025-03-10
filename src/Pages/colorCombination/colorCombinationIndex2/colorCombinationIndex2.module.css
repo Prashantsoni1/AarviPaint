@@ -1,0 +1,150 @@
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wallimageContainer {
+    width: 450px;
+    height: 710px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.imgContainer {
+    width: 100%;
+    height: 550px;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: red;
+}
+.imgContent{
+    width: 450px;
+    height: 67px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.editContainer{
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+.rightContainer {
+    width: 850px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recentContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.heading1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.recent_box {
+    display: flex;
+    gap: 20px;
+}
+.recent_div{
+    width: 92px;
+    height: 94px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.recent_item {
+    width: 100%;
+    height: 80px;
+    /* background-color: #FF2020; */
+}
+
+.recent_itemCode {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.line {
+    width: 825px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 1)
+}
+
+.heading2 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* .allcodesBox {
+    width: 844px;
+    height: 440px;
+    overflow: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+} */
+.allcodesBox {
+    width: 844px;
+    height: 440px;
+    overflow: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.allcodesBox::-webkit-scrollbar {
+    display: none;
+  
+}
+
+.colorBox {
+    width: 120px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.color_item {
+    width: 100%;
+    height: 120px;
+    background-color: #FF2020;
+}
+
+.color_itemCode {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}

@@ -162,7 +162,7 @@ const StickyNavbar = () => {
                 MenuListProps={{ onMouseLeave: handleMenuClose }}
                 sx={{ mt: 1 }}
               >
-                <MenuItem component={Link} to="/services/service1" onClick={handleMenuClose}>
+                <MenuItem component={Link} to="/services/waterproofing" onClick={handleMenuClose}>
                   Dummy Service 1
                 </MenuItem>
                 <MenuItem component={Link} to="/services/service2" onClick={handleMenuClose}>
@@ -186,52 +186,6 @@ const StickyNavbar = () => {
               }}
             >
               Contact
-            </Typography>
-            <Typography
-              component={Link}
-              to="/login"
-              sx={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                textDecoration: 'none',
-                color: 'text.primary',
-                fontWeight: location.pathname === '/login' ? 600 : 400,
-                transition: 'color 0.3s ease',
-                '&:hover': {
-                  color: '#8224E3',
-                },
-                ...(location.pathname === '/login' && { color: '#8224E3' }),
-              }}
-            >
-              {isLogin?  (
-                <Typography
-                  variant="body1"
-                  sx={{
-                    ml: 1,
-                    fontWeight: 500,
-                    color: 'text.primary',
-                    transition: 'color 0.3s ease',
-                    '&:hover': {
-                      color: '#8224E3',
-                    },
-                  }}
-                >
-                  Hey! User
-                </Typography>
-              ):( <Typography
-                variant="body1"
-                sx={{
-                  ml: 1,
-                  fontWeight: 500,
-                  color: 'text.primary',
-                  transition: 'color 0.3s ease',
-                  '&:hover': {
-                    color: '#8224E3',
-                  },
-                }}
-              >
-                Login
-              </Typography>)}
             </Typography>
           </Box>
         </Toolbar>
@@ -295,9 +249,6 @@ const StickyNavbar = () => {
             </Box>
             <ListItemButton component={Link} to="/contact" onClick={toggleDrawer}>
               <ListItemText primary="Contact" />
-            </ListItemButton>
-            <ListItemButton component={Link} to="/login" onClick={toggleDrawer}>
-              <ListItemText primary="Login" />
             </ListItemButton>
           </List>
         </Box>
