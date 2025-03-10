@@ -16,6 +16,8 @@ const products = [
         description: "A high sheen, washable wall paint with stain-resistant finish ensures walls look new for a long time.",
         features: ["Smooth and glossy finish", "Non toxic and Lead free", "5 years warranty"],
         image: img1,
+        colorCode1 : "#15816A",
+        colorCode2 : "#33B496",
     },
     {
         id: 2,
@@ -24,6 +26,8 @@ const products = [
         description: "A high sheen, washable wall paint with stain-resistant finish ensures walls look new for a long time.",
         features: ["Smooth and glossy finish", "Non toxic and Lead free", "5 years warranty"],
         image: img2,
+        colorCode1 : "#C79A19",
+        colorCode2 : "#D9B84A",
     },
     {
         id: 3,
@@ -32,6 +36,8 @@ const products = [
         description: "A high sheen, washable wall paint with stain-resistant finish ensures walls look new for a long time.",
         features: ["Smooth and glossy finish", "Non toxic and Lead free", "5 years warranty"],
         image: img3,
+        colorCode1 : "#C21F1F",
+        colorCode2 : "#69291E ",
     },
     {
         id: 4,
@@ -40,6 +46,8 @@ const products = [
         description: "A high sheen, washable wall paint with stain-resistant finish ensures walls look new for a long time.",
         features: ["Smooth and glossy finish", "Non toxic and Lead free", "5 years warranty"],
         image: img4,
+        colorCode1 : "#E8E8E8",
+        colorCode2 : "#084C8A",
     },
 ];
 const categories = [
@@ -87,7 +95,7 @@ const ProductIndex2 = () => {
                     {/* Emulsion */}
                     <div className={Styles.categoryItem}>
                         <div className={Styles.type} onClick={() => toggleDropdown("Emulsion")}>
-                            <div>Emulsion</div>
+                            <div className={Styles.opt}>Emulsion</div>
                             <div className={`${Styles.downArrow} ${openDropdowns.includes("Emulsion") ? Styles.rotate : ""}`}>
                                 <img src={rightArrow} alt="→" />
                             </div>
@@ -110,7 +118,7 @@ const ProductIndex2 = () => {
                     {/* Enamel */}
                     <div className={Styles.categoryItem}>
                         <div className={Styles.type} onClick={() => toggleDropdown("Enamel")}>
-                            <div>Enamel</div>
+                            <div className={Styles.opt}>Enamel</div>
                             <div className={`${Styles.downArrow} ${openDropdowns.includes("Enamel") ? Styles.rotate : ""}`}>
                                 <img src={rightArrow} alt="→" />
                             </div>
@@ -127,7 +135,7 @@ const ProductIndex2 = () => {
                     {/* Primer */}
                     <div className={Styles.categoryItem}>
                         <div className={Styles.type} onClick={() => toggleDropdown("Primer")}>
-                            <div>Primer</div>
+                            <div className={Styles.opt}>Primer</div>
                             <div className={`${Styles.downArrow} ${openDropdowns.includes("Primer") ? Styles.rotate : ""}`}>
                                 <img src={rightArrow} alt="→" />
                             </div>
@@ -144,12 +152,28 @@ const ProductIndex2 = () => {
                     {/* Wallputty */}
                     <div className={Styles.categoryItem}>
                         <div className={Styles.type} onClick={() => toggleDropdown("Wallputty")}>
-                            <div>Wallputty</div>
+                            <div className={Styles.opt}>Wallputty</div>
                             <div className={`${Styles.downArrow} ${openDropdowns.includes("Wallputty") ? Styles.rotate : ""}`}>
                                 <img src={rightArrow} alt="→" />
                             </div>
                         </div>
                         {openDropdowns.includes("Wallputty") && (
+                            <div className={Styles.dropdown}>
+                                <div className={Styles.dropdownItem} onClick={() => filterProducts("Interior & Exterior Both")}>
+                                    Interior & Exterior Both
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                    {/* Wallputty */}
+                    <div className={Styles.categoryItem}>
+                        <div className={Styles.type} onClick={() => toggleDropdown("Waterprofing")}>
+                            <div className={Styles.opt}>WaterProofing</div>
+                            <div className={`${Styles.downArrow} ${openDropdowns.includes("Waterprofing") ? Styles.rotate : ""}`}>
+                                <img src={rightArrow} alt="→" />
+                            </div>
+                        </div>
+                        {openDropdowns.includes("Waterprofing") && (
                             <div className={Styles.dropdown}>
                                 <div className={Styles.dropdownItem} onClick={() => filterProducts("Interior & Exterior Both")}>
                                     Interior & Exterior Both
@@ -175,7 +199,7 @@ const ProductIndex2 = () => {
                 <div className={Styles.productList}>
                     {filteredProducts.map(product => (
                         <div className={Styles.productDescription} key={product.id}>
-                            <div className={Styles.left1}>
+                            <div className={Styles.left1} style={{ background: `linear-gradient(144.76deg, ${product.colorCode1} 48%, ${product.colorCode2} 99.96%)` }}>
                                 <div className={Styles.imgcontainer}>
                                     <img src={product.image} alt="" className={Styles.img} />
                                 </div>

@@ -52,7 +52,10 @@ import Login from "../Pages/Login/login";
 import StickyNavbar from "../Components/Common/Navbar/navbar";
 import Request from "../Components/mini_sections/request-form/reaquest";
 import Footer from "../Components/Common/Footer/footer";
-
+import Color_combination from "../Pages/colorCombination/colorCombination";
+import Waterproofing from "../Pages/Waterproofing/waterproofing";
+import WaterproofingBudget from "../Pages/calculator/waterproofingBudgetCalculator/waterproofingbudget";
+import ScrollToTop from "../Components/Common/scrollToTop/scrollToTop";
 const Layout: React.FC = () => {
     const location = useLocation();
     const hideNavAndFooter = location.pathname === "/login"; // Check if the current route is login
@@ -60,12 +63,16 @@ const Layout: React.FC = () => {
     return (
         <>
             {!hideNavAndFooter && <StickyNavbar />}
+            <ScrollToTop/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/services/visualizer" element={<Color_combination />} />
+                <Route path="/services/waterproofing" element={<Waterproofing />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/products/productDetails" element={<ProductsDetails />} />
+                <Route path="/calculator/waterproofingBudget" element={<WaterproofingBudget />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/booking" element={<BookingPage />} />
                 <Route path="/dealers" element={<DealersPage />} />

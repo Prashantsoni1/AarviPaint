@@ -34,25 +34,25 @@
 
 .productHeading {
     font-family: 'Poppins';
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 35px;
 }
 
 .subHeading {
     font-family: 'Poppins';
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 13px;
 }
 
 .para {
     font-family: 'Poppins';
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
 }
 
 .feature {
     font-family: 'Poppins';
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     margin-left: 20px;
 }

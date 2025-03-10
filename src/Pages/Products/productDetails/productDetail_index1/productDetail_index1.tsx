@@ -8,6 +8,7 @@ const ProductDetails1 = () => {
       <div className={Styles.background}>
         <img src={background} alt="background" className={Styles.backgroundImg} />
       </div>
+      <div className={Styles.gradient_container}></div>
       <div className={Styles.content}>
         <div className={Styles.heading}>PRODUCT DETAIL</div>
         <div className={Styles.nav}>

@@ -10,17 +10,16 @@ const ProductIndex1 = () => {
         <div className={Styles.main}>
             <img src={background} alt="background" className={Styles.backgroundImage} />
             <div className={Styles.overlay}>
-                {/* <div className={Styles.gradient_container}></div> */}
+                <div className={Styles.gradient_container}></div>
                 <div className={Styles.container1}>
-                    {/* <div> */}
+                   
                     <div className={Styles.heading}>{contentData.heading}</div>
                     <p className={Styles.para}>{contentData.paragraph}</p>
                 </div>
-                <div className={Styles.container2}><h1>right container</h1></div>
+                <div className={Styles.container2}></div>
             </div>
             
         </div>
-        // </div>
     )
 };
 

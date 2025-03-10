@@ -162,7 +162,7 @@ const StickyNavbar = () => {
                 MenuListProps={{ onMouseLeave: handleMenuClose }}
                 sx={{ mt: 1 }}
               >
-                <MenuItem component={Link} to="/services/service1" onClick={handleMenuClose}>
+                <MenuItem component={Link} to="/services/waterproofing" onClick={handleMenuClose}>
                   Dummy Service 1
                 </MenuItem>
                 <MenuItem component={Link} to="/services/service2" onClick={handleMenuClose}>

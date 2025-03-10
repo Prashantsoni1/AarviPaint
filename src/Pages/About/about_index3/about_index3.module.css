@@ -18,7 +18,7 @@
 
 .heading1 {
     font-family: 'Poppins';
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 30px;
     color: rgba(128, 128, 128, 1);
 
@@ -30,7 +30,7 @@
 }
 .heading2 {
     font-family: 'Poppins';
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 38px;
     line-height: 42px;
     letter-spacing: 2%;
@@ -40,7 +40,7 @@
 
 .para {
     font-family: 'Poppins';
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 19px;
     text-align: justify;
     color: rgba(92, 92, 92, 1);
