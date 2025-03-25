@@ -1,16 +1,13 @@
 .main {
     position: relative;
     width: 100%;
-    height: 100vh;
     display: flex;
-    padding: 30px;
     color: white;
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
 
 .backgroundImage {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -35,23 +32,8 @@
     text-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.25);
 
 }
-.gradient_container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,
-            rgba(0, 0, 0, 0.1) 0%,
-            rgba(28, 28, 28, 0.1) 50%,
-            rgba(255, 255, 255, 0.9) 90%,
-            #FFFFFF 80%,
-            #FFFFFF 80%
-        );
-    z-index: 0;
-}
 .textContainer {
-    position: relative;
+    position: absolute;
     max-width: 40%;
     padding-left: 50px;
     z-index: 1;

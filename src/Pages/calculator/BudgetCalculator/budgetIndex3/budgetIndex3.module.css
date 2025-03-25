@@ -1,0 +1,56 @@
+.main {
+    width: 100%;
+    height: 60vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.containerLeft {
+    width: 50%;
+    height: 100%;
+}
+
+.containerRight {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+    letter-spacing: 2%;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.para {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+
+}
+.feature ol {
+    list-style-position: inside; 
+    display: flex;
+    flex-direction: column;
+}
+
+.points {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+
+}

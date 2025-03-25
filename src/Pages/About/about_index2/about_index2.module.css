@@ -6,6 +6,7 @@
 
 .container1 {
     width: 40%;
+    height: 600px;
     margin: 30px;
     position: relative;
 }
@@ -32,8 +33,6 @@
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 19px;
-    /* line-height: 27px;
-    letter-spacing: 0px; */
     text-align: justify;
     color: rgba(92, 92, 92, 1);
 

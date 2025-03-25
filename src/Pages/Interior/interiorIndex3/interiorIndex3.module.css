@@ -1,0 +1,76 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.newsCard {
+    position: relative;
+    width: 30%;
+    height: 500px;
+    /* margin: 5rem auto; */
+    border-radius: 10px;
+    background-color: #fff;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Lighter black filter */
+    transition: 0.3s ease-in-out;
+}
+.newsCaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    /* background-color: rgba(0, 0, 0, 0.6);  */
+    color: white;
+    padding: 15px;
+    /* opacity: 0.6; */
+    transform: translateY(80%);
+    transition: transform 0.4s ease-in-out, opacity 0.1s 0.3s ease-in-out;
+}
+
+/* ⭐️ Use :global() for hover effect in CSS Modules */
+:global(.newsSlideUp:hover) .newsCaption {
+    opacity: 1; 
+    transform: translateY(0);
+}
+.newsImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Title and content styles */
+.newsCaptionTitle {
+    margin-top: 0;
+}
+
+.newsCaptionContent {
+    margin: 0;
+}
+
+/* Link styling */
+.newsCaptionLink {
+    color: #fff;
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: opacity 0.15s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.newsCaptionLink:hover {
+    opacity: 0.65;
+}

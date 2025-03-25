@@ -13,6 +13,7 @@ import {
   MenuItem,
 } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../assets/navbar/arrvi_logo.png";
@@ -127,6 +128,20 @@ const StickyNavbar = () => {
             </Typography>
             <Typography
               component={Link}
+              to="/colorCombination"
+              sx={{
+                textDecoration: "none",
+                color: "black",
+                fontWeight: location.pathname === "/colorCombination" ? "bold" : "normal",
+                transition: "color 0.3s ease",
+                "&:hover": { color: "#8224E3" },
+                ...(location.pathname === "/colorCombination" && { color: "#8224E3" }),
+              }}
+            >
+              Color-Combination
+            </Typography>
+            <Typography
+              component={Link}
               to="/products"
               sx={{
                 textDecoration: "none",
@@ -139,40 +154,6 @@ const StickyNavbar = () => {
             >
               Products
             </Typography>
-            <Box
-              onMouseEnter={handleMenuOpen}
-              onMouseLeave={handleMenuClose}
-              sx={{ position: "relative", cursor: "pointer" }}
-            >
-              <Typography
-                sx={{
-                  textDecoration: "none",
-                  color: "black",
-                  fontWeight: "normal",
-                  transition: "color 0.3s ease",
-                  "&:hover": { color: "#8224E3" },
-                }}
-              >
-                Services
-              </Typography>
-              <Menu
-                anchorEl={anchorEl}
-                open={Boolean(anchorEl)}
-                onClose={handleMenuClose}
-                MenuListProps={{ onMouseLeave: handleMenuClose }}
-                sx={{ mt: 1 }}
-              >
-                <MenuItem component={Link} to="/services/waterproofing" onClick={handleMenuClose}>
-                  Dummy Service 1
-                </MenuItem>
-                <MenuItem component={Link} to="/services/service2" onClick={handleMenuClose}>
-                  Dummy Service 2
-                </MenuItem>
-                <MenuItem component={Link} to="/services/service3" onClick={handleMenuClose}>
-                  Dummy Service 3
-                </MenuItem>
-              </Menu>
-            </Box>
             <Typography
               component={Link}
               to="/contact"
@@ -206,6 +187,12 @@ const StickyNavbar = () => {
             overflowY: "auto", // Allow scrolling if content overflows
           }}
         >
+          {/* Close Button */}
+          <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
+            <IconButton onClick={toggleDrawer}>
+              <CloseIcon />
+            </IconButton>
+          </Box>
           <List>
             <ListItem sx={{ justifyContent: "center", paddingY: 2 }}>
               <Typography variant="h6">
@@ -225,28 +212,9 @@ const StickyNavbar = () => {
             <ListItemButton component={Link} to="/products" onClick={toggleDrawer}>
               <ListItemText primary="Products" />
             </ListItemButton>
-            <Box
-              onMouseEnter={() => setServiceMenuOpen(true)}
-              onMouseLeave={() => setServiceMenuOpen(false)}
-              sx={{ position: "relative", cursor: "pointer" }}
-            >
-              <ListItem>
-                <Typography variant="subtitle1">Services</Typography>
-              </ListItem>
-              {serviceMenuOpen && (
-                <Box sx={{ boxShadow: 1 }}>
-                  <ListItemButton component={Link} to="/services/service1" onClick={toggleDrawer}>
-                    <ListItemText primary="Dummy Service 1" />
-                  </ListItemButton>
-                  <ListItemButton component={Link} to="/services/service2" onClick={toggleDrawer}>
-                    <ListItemText primary="Dummy Service 2" />
-                  </ListItemButton>
-                  <ListItemButton component={Link} to="/services/service3" onClick={toggleDrawer}>
-                    <ListItemText primary="Dummy Service 3" />
-                  </ListItemButton>
-                </Box>
-              )}
-            </Box>
+            <ListItemButton component={Link} to="/colorCombination" onClick={toggleDrawer}>
+              <ListItemText primary="Color-Combination" />
+            </ListItemButton>
             <ListItemButton component={Link} to="/contact" onClick={toggleDrawer}>
               <ListItemText primary="Contact" />
             </ListItemButton>
