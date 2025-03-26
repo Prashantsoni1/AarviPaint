@@ -21,10 +21,10 @@ const contentData = [
   },
   {
     id: 3,
-    title: "Interior & Exterior Emulsions",
-    subtitle: "Seamless Beauty Inside and Out",
+    title: "Enamel",
+    subtitle: "Protection Meets Perfection",
     description:
-      "Aarvi Paints offers a versatile range of Interior & Exterior Emulsions that ensure your home shines in every corner. With innovative formulas that blend durability, vibrancy, and effortless application, our collection includes luxurious finishes (Opal Touch), enduring appeal (Sapphire Glow), all-weather performance (Amber Flex), and economical brilliance (Citrine Style). Aarvi Paints ensures your home makes a lasting impression, inside and out.",
+      "Aarvi Paints’ Exterior Emulsions combine cutting-edge technology with stunning aesthetics to shield your home from the harshest elements while enhancing its beauty. Choose from weather-resistant elegance (Platinum Shield), timeless resilience (Golden Guard), adaptable strength (Silver Coat), or cost-effective durability (Bronze Shield). With superior UV protection and anti-fungal properties, your home will stay radiant and safeguarded for years.",
     styleClass: "parallax-container3",
     link: "/products",
   },
@@ -36,6 +36,15 @@ const contentData = [
       "Aarvi Paints’ Exterior Emulsions combine cutting-edge technology with stunning aesthetics to shield your home from the harshest elements while enhancing its beauty. Choose from weather-resistant elegance (Platinum Shield), timeless resilience (Golden Guard), adaptable strength (Silver Coat), or cost-effective durability (Bronze Shield). With superior UV protection and anti-fungal properties, your home will stay radiant and safeguarded for years.",
     styleClass: "parallax-container4",
     link: "/services/waterproofing",
+  },
+  {
+    id: 5,
+    title: "Interior & Exterior Emulsions",
+    subtitle: "Seamless Beauty Inside and Out",
+    description:
+      "Aarvi Paints offers a versatile range of Interior & Exterior Emulsions that ensure your home shines in every corner. With innovative formulas that blend durability, vibrancy, and effortless application, our collection includes luxurious finishes (Opal Touch), enduring appeal (Sapphire Glow), all-weather performance (Amber Flex), and economical brilliance (Citrine Style). Aarvi Paints ensures your home makes a lasting impression, inside and out.",
+    styleClass: "parallax-container5",
+    link: "/products",
   },
 
 ];

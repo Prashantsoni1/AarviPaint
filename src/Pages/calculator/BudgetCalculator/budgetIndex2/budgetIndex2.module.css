@@ -87,8 +87,7 @@
     align-items: center ;
 }
 .button {
-    width: 270px;
-    height: 47px;
+    width: 40%;
     border-width: 1px;
     border-radius: 50px;
     border: 1px solid black;
@@ -135,14 +134,75 @@
     gap: 10px;
 }
 
-.input {
-    width: 100%;
+.inputModal {
+    width: 40%;
     padding: 10px;
+    border-radius: 20px;
+    background-color: white;
     border: 1px solid #ccc;
 }
 
+.checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 2px solid green; */
+  }
+  
+  .checkboxLabel {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: start;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+  }
 .modalButtons {
     display: flex;
     justify-content: center;
     margin-top: 15px;
 }
+
+.toggleContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .toggleSwitch {
+    width: 50px;
+    height: 24px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid rgba(68, 255, 0, 1);
+    ;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggleCircle {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(68, 255, 0, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .toggleCircle.active {
+    left: 26px;
+    /* Moves the circle to the right */
+  }
+  
+  .toggleContainer span {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+  }
