@@ -8,7 +8,6 @@ const WaterproofingIndex1 = () => {
 
         <div className={Styles.main}>
             <img src={background} alt="background" className={Styles.backgroundImage} />
-            {/* <div className={Styles.gradient_container}></div> */}
             <div className={Styles.textContainer}>
                 <div className={Styles.heading}>WATERPROOFING</div>
                 <div className={Styles.para}>

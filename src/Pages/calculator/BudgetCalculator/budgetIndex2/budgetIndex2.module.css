@@ -1,0 +1,208 @@
+.main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLeft {
+    width: 50%;
+    height: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(41px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.containerRight {
+    width: 50%;
+    height: 400px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(41px)
+}
+
+.sideImg {
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: underline;
+    text-underline-offset: 10px; 
+}
+.wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+   
+}
+.label {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.radioInput {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+}
+.dropdownContainer{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.button {
+    width: 40%;
+    border-width: 1px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputRow {
+    display: flex;
+    gap: 10px;
+}
+
+.inputModal {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 2px solid green; */
+  }
+  
+  .checkboxLabel {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: start;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+  }
+.modalButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.toggleContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .toggleSwitch {
+    width: 50px;
+    height: 24px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid rgba(68, 255, 0, 1);
+    ;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggleCircle {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(68, 255, 0, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .toggleCircle.active {
+    left: 26px;
+    /* Moves the circle to the right */
+  }
+  
+  .toggleContainer span {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+  }

@@ -33,6 +33,18 @@
   padding-left: 5%;
   color: #fff;
 }
+.parallax-container4 {
+  background-image: url("../../assets/bg4.png");
+  align-items: center;
+  padding-left: 5%;
+  color: #fff;
+}
+.parallax-container5 {
+  background-image: url("../../assets/bg5.png");
+  align-items: center;
+  padding-left: 5%;
+  color: #fff;
+}
 .parallax-container h1{
   font-family: serif;
   font-weight: 500;

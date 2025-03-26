@@ -23,7 +23,7 @@ const Services = () => {
               <div className={Styles.content}>
                 <p>Achieve a smooth, vibrant, and elegant finish with our premium interior emulsion paints.</p>
                 <div className={Styles.booking_button}>
-                  <a href="#">
+                  <a href="/services/interior">
                     <img src={arrow} alt="Arrow" className={Styles.arrow_icon} />
                   </a>
                 </div>
@@ -36,7 +36,7 @@ const Services = () => {
               <div className={Styles.content}>
                 <p>Achieve a smooth, vibrant, and elegant finish with our premium interior emulsion paints.</p>
                 <div className={Styles.booking_button}>
-                  <a href="#">
+                  <a href="/services/exterior">
                     <img src={arrow} alt="Arrow" className={Styles.arrow_icon} />
                   </a>
                 </div>

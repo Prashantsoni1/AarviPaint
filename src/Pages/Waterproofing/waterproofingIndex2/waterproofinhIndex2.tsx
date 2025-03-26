@@ -5,7 +5,7 @@ import sideImage from "../../../assets/waterproofing/ProtectionComposite_Residen
 const WaterproofingIndex2 = () => {
     const navigate = useNavigate();
     const handleNavigation = () => {
-        navigate("/calculator/waterproofingBudget");
+        navigate("/calculator/Budget", { state: { waterProofingBudget: true } });
     };
     return (
 
