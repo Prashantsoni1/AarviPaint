@@ -14,7 +14,6 @@ import Brouser from "../../Components/mini_sections/brouser/brouser";
 import Testimonal from "../../Components/mini_sections/testimonal/testimonal"
 import Calculator from "../../Components/Calculator/calculator";
 import Services from "../../Components/mini_sections/services/service"
-import MobileNavbar from "../../Components/Common/BottomNavbar/bottomNavbar";
 const Home = () => {
 
     return (
@@ -30,7 +29,6 @@ const Home = () => {
       <Download/>
       <Brouser/>
       <Testimonal/>
-      <MobileNavbar/>
 
     </ThemeProvider>
 
