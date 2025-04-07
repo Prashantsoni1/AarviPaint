@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from './product_index1.module.css';
-import background from '../../../assets/product/background.png';
+import background from '../../../../../assets/product/background.png';
 const ProductIndex1 = () => {
     const contentData = {
         heading: "PRODUCTS",

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './waterproofingIndex3.module.css';
-import wallprotectionImg from "../../../assets/waterproofing/closeup-shot-female-using-paint-rollers-with-color-blue_181624-2615 1.png";
-import tankPaintIng from "../../../assets/waterproofing/waterproofing-services-500x383 2.png";
-import wetAreaImg from "../../../assets/waterproofing/worker-applying-waterproofing-paint-floor-bathroom_191163-1493 2.png";
-import baseMentImg from "../../../assets/waterproofing/medium-shot-man-working-wall_23-2148384429 2.png";
-import industrialImg from "../../../assets/waterproofing/house-painters-with-paint-roller-house_1398-1570 2.png";
-import img1 from "../../../assets/product/image 27.png";
+import wallprotectionImg from "../../../../../assets/waterproofing/closeup-shot-female-using-paint-rollers-with-color-blue_181624-2615 1.png";
+import tankPaintIng from "../../../../../assets/waterproofing/waterproofing-services-500x383 2.png";
+import wetAreaImg from "../../../../../assets/waterproofing/worker-applying-waterproofing-paint-floor-bathroom_191163-1493 2.png";
+import baseMentImg from "../../../../../assets/waterproofing/medium-shot-man-working-wall_23-2148384429 2.png";
+import industrialImg from "../../../../../assets/waterproofing/house-painters-with-paint-roller-house_1398-1570 2.png";
+import img1 from "../../../../../assets/product/image 27.png";
 
 interface Product {
     id: number;

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Styles from "./color_combinationIndex3.module.css";
-import img1 from "../../../assets/colorCombination/armchair-green-living-room-with-copy-space__1_-removebg-preview 1.png";
-import img2 from "../../../assets/colorCombination/3d-contemporary-living-room-interior-modern-furniture_1048-10264-removebg-preview 1.png";
-import img3 from "../../../assets/colorCombination/armchair-living-room-with-copy-space_43614-908 1.png";
-import img4 from "../../../assets/colorCombination/bed-arrangements-still-life_23-2150532985-removebg-preview (1) 1.png";
-import img5 from "../../../assets/colorCombination/soft-pastel-hues-room-kids_23-2151690404 1.png";
-import img6 from "../../../assets/colorCombination/soft-pastel-hues-room-kids_23-2151690318 1.png";
-import img7 from "../../../assets/colorCombination/3d-rendering-house-model_23-2150799695 1.png";
-import img8 from "../../../assets/colorCombination/3d-house-model-with-bright-lights_23-2149314221 1.png";
-import img9 from "../../../assets/colorCombination/japanese-culture-house-entrance-with-fence_23-2149301053 1.png";
+import img1 from "../../../../../assets/colorCombination/armchair-green-living-room-with-copy-space__1_-removebg-preview 1.png";
+import img2 from "../../../../../assets/colorCombination/3d-contemporary-living-room-interior-modern-furniture_1048-10264-removebg-preview 1.png";
+import img3 from "../../../../../assets/colorCombination/armchair-living-room-with-copy-space_43614-908 1.png";
+import img4 from "../../../../../assets/colorCombination/bed-arrangements-still-life_23-2150532985-removebg-preview (1) 1.png";
+import img5 from "../../../../../assets/colorCombination/soft-pastel-hues-room-kids_23-2151690404 1.png";
+import img6 from "../../../../../assets/colorCombination/soft-pastel-hues-room-kids_23-2151690318 1.png";
+import img7 from "../../../../../assets/colorCombination/3d-rendering-house-model_23-2150799695 1.png";
+import img8 from "../../../../../assets/colorCombination/3d-house-model-with-bright-lights_23-2149314221 1.png";
+import img9 from "../../../../../assets/colorCombination/japanese-culture-house-entrance-with-fence_23-2149301053 1.png";
 
 const ColorCombinationIndex3 = () => {
     const [imageData] = useState([

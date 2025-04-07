@@ -22,8 +22,9 @@ const Home = () => {
       <Visualizer/>
       <Services/>
       <ParallaxComponent/>
-      <Gellery/>
       <Calculator/>
+      <Gellery/>
+      
       <Download/>
       <Brouser/>
       <Testimonal/>

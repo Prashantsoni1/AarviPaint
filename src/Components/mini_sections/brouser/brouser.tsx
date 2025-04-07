@@ -1,14 +1,14 @@
 import React from "react";
 import Styles from "./brouser.module.css";
 import CustomCarousel from "../../mini_sections/carousel";
-import brouser from "../../../assets/brouser/b1.png";
-import brouser2 from "../../../assets/brouser/b2.png";
-import brouser3 from "../../../assets/brouser/b3.png";
-import brouser4 from "../../../assets/brouser/b4.png";
-import brouser5 from "../../../assets/brouser/b5.png";
-import brouser6 from "../../../assets/brouser/b6.png";
-import brouser7 from "../../../assets/brouser/b7.png";
-import bg from "../../../assets/images/bg.png";
+import brouser from "../../../../../assets/brouser/b1.png";
+import brouser2 from "../../../../../assets/brouser/b2.png";
+import brouser3 from "../../../../../assets/brouser/b3.png";
+import brouser4 from "../../../../../assets/brouser/b4.png";
+import brouser5 from "../../../../../assets/brouser/b5.png";
+import brouser6 from "../../../../../assets/brouser/b6.png";
+import brouser7 from "../../../../../assets/brouser/b7.png";
+import bg from "../../../../../assets/images/bg.png";
 
 const Brouser = () => {
   const [activeStep, setActiveStep] = React.useState(0);

@@ -10,10 +10,10 @@ import {
 } from "@mui/material";
 import "@fontsource/rubik-doodle-shadow";
 import "@fontsource/poppins";
-import interiorWallPaint from "../../assets/calculator/interior_Wall_Paint.png";
-import exterior from "../../assets/calculator/waterProofing.png";
-import colorGuide from "../../assets/calculator/colorGuide.jpeg";
-import arrow from '../../assets/calculator/down-arrow 2.png'
+import interiorWallPaint from "../../../../assets/calculator/interior_Wall_Paint.png";
+import exterior from "../../../../assets/calculator/waterProofing.png";
+import colorGuide from "../../../../assets/calculator/colorGuide.jpeg";
+import arrow from '../../../../assets/calculator/down-arrow 2.png'
 import styles from './calculator.module.css'
 
 const Calculator = () => {

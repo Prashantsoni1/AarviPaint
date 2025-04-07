@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import styles from "./interiorIndex5.module.css"
-import m1 from "../../../assets/interior/m1.png"
-import m2 from "../../../assets/interior/m2.png"
-import m3 from "../../../assets/interior/m3.png"
-import m4 from "../../../assets/interior/m4.png"
+import m1 from "../../../../../assets/interior/m1.png"
+import m2 from "../../../../../assets/interior/m2.png"
+import m3 from "../../../../../assets/interior/m3.png"
+import m4 from "../../../../../assets/interior/m4.png"
 const mainCategories = [
     {
         name: "Living Room",

@@ -1,13 +1,13 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import background from '../../../../assets/product/background.png';
+import background from '../../../../../../assets/product/background.png';
 import Styles from './productDetails_index2.module.css';
-import img1 from '../../../../assets/product/image 27.png'
-import icon1 from '../../../../assets/product/waterdrop 1.png'
-import icon2 from '../../../../assets/product/measuring-jar 1.png'
-import icon3 from '../../../../assets/product/star 1.png'
-import icon4 from '../../../../assets/product/paint-roller 1.png'
-import icon5 from '../../../../assets/product/glass-jar 1.png'
+import img1 from '../../../../../../assets/product/image 27.png'
+import icon1 from '../../../../../../assets/product/waterdrop 1.png'
+import icon2 from '../../../../../../assets/product/measuring-jar 1.png'
+import icon3 from '../../../../../../assets/product/star 1.png'
+import icon4 from '../../../../../../assets/product/paint-roller 1.png'
+import icon5 from '../../../../../../assets/product/glass-jar 1.png'
 const ProductDetails2 = () => {
     const navigate = useNavigate();
     const handleContactNavigation = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from './color_combinationIndex1.module.css'
-import background from "../../../assets/colorCombination/Group 165.png"
-import sideImg from "../../../assets/colorCombination/man-with-fan 2.png"
+import background from "../../../../../assets/colorCombination/Group 165.png"
+import sideImg from "../../../../../assets/colorCombination/man-with-fan 2.png"
 const ColorCombinationIndex1 = () => {
 
     return (

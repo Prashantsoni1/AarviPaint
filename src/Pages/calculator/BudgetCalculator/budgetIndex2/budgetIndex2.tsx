@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent } from "react";
 import { useLocation } from "react-router-dom";
 import Styles from "./budgetIndex2.module.css";
-import sideImg from "../../../../assets/waterproofingBudget/interior-design-with-photoframes-couch 3.png";
+import sideImg from "../../../../../../assets/waterproofingBudget/interior-design-with-photoframes-couch 3.png";
 
 interface FormData {
     name: string;

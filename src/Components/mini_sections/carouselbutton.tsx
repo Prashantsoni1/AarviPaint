@@ -1,6 +1,6 @@
 import React from "react";
-import leftarrow from "../../assets/icons/left_arrow_blc.png";
-import rightarrow from "../../assets/icons/right_arrow_blc.png";
+import leftarrow from "../../../../assets/icons/left_arrow_blc.png";
+import rightarrow from "../../../../assets/icons/right_arrow_blc.png";
 
 interface ButtonGroupProps {
   next?: () => void;
@@ -34,7 +34,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: "white",
     border: "1px solid black",
     borderRadius: "50%",
-    width: "40px",
+    width: "30px",
     margin: "0 10px",
     height: "40px",
     display: "flex",

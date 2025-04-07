@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './interiorIndex4.module.css'
-import sideImage from "../../../assets/interior/3d-rendering-loft-scandinavian-living-room-with-working-table-bookshelf 2.png";
+import sideImage from "../../../../../assets/interior/3d-rendering-loft-scandinavian-living-room-with-working-table-bookshelf 2.png";
 const InteriorIndex4 = () => {
     const navigate = useNavigate();
     const handleNavigation = () => {

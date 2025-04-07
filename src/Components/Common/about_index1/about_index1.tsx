@@ -1,6 +1,6 @@
 import React from "react";
-import bucketsgroup from '../../../assets/about/aboutIndex1/paintbuckets.png';
-import background from '../../../assets/about/aboutIndex1/Lighting 1.png';
+import bucketsgroup from '../../../../../assets/about/aboutIndex1/paintbuckets.png';
+import background from '../../../../../assets/about/aboutIndex1/Lighting 1.png';
 import "@fontsource/poppins";
 import Styles from './about_index1.module.css';
 

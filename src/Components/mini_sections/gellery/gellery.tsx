@@ -3,14 +3,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Styles from "./gellery.module.css";
 import CustomCarousel from "../../mini_sections/carousel";
-import gellery1 from "../../../assets/gellery/gellery1.png";
-import gellery2 from "../../../assets/gellery/gellery2.png";
-import gellery3 from "../../../assets/gellery/gellery3.png";
-import gellery4 from "../../../assets/gellery/gellery4.png";
-import gellery5 from "../../../assets/gellery/gellery5.png";
-import gellery6 from "../../../assets/gellery/gellery6.png";
-import gellery7 from "../../../assets/gellery/gellery7.png";
-import gellery8 from "../../../assets/gellery/gellery8.png";
+import gellery1 from "../../../../../assets/gellery/gellery1.png";
+import gellery2 from "../../../../../assets/gellery/gellery2.png";
+import gellery3 from "../../../../../assets/gellery/gellery3.png";
+import gellery4 from "../../../../../assets/gellery/gellery4.png";
+import gellery5 from "../../../../../assets/gellery/gellery5.png";
+import gellery6 from "../../../../../assets/gellery/gellery6.png";
+import gellery7 from "../../../../../assets/gellery/gellery7.png";
+import gellery8 from "../../../../../assets/gellery/gellery8.png";
 
 const Gellery = () => { 
   useEffect(() => {

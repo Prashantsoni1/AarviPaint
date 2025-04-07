@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Styles from './exteriorIndex5.module.css';
-import img1 from "../../../assets/exterior/image1.png";
-import img2 from "../../../assets/exterior/image2.png";
-import img3 from "../../../assets/exterior/image3.png";
-import img4 from "../../../assets/exterior/image4.png";
-import img5 from "../../../assets/exterior/image5.png";
-import img6 from "../../../assets/exterior/image6.png";
-import img7 from "../../../assets/exterior/image7.png";
-import img8 from "../../../assets/exterior/image8.png";
+import img1 from "../../../../../assets/exterior/image1.png";
+import img2 from "../../../../../assets/exterior/image2.png";
+import img3 from "../../../../../assets/exterior/image3.png";
+import img4 from "../../../../../assets/exterior/image4.png";
+import img5 from "../../../../../assets/exterior/image5.png";
+import img6 from "../../../../../assets/exterior/image6.png";
+import img7 from "../../../../../assets/exterior/image7.png";
+import img8 from "../../../../../assets/exterior/image8.png";
 
 const ExteriorIndex5 = () => {
     const [images, setImages] = useState([img1, img2, img3, img4, img5, img6, img7, img8]);

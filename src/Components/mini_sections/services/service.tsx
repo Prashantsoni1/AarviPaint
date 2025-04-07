@@ -1,10 +1,10 @@
 import React from "react";
 import Styles from "./service.module.css";
-import modal from "../../../assets/service/service.png";
+import modal from "../../../../../assets/service/service.png";
 import { WbSunny, Spa, Palette, Brush, Star, EnergySavingsLeaf } from "@mui/icons-material";
-import arrow from '../../../assets/icons/right_arrow_blc.png'
-import interior from '../../../assets/service/interior.png'
-import exterior from '../../../assets/service/exterior.png'
+import arrow from '../../../../../assets/icons/right_arrow_blc.png'
+import interior from '../../../../../assets/service/interior.png'
+import exterior from '../../../../../assets/service/exterior.png'
 const Services = () => {
   const contentData = {
     heading: "Transform Your Home with Our Expert Painting Services.",

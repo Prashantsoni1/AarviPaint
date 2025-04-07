@@ -1,13 +1,13 @@
 import React from "react";
 import Styles from "./testimonal.module.css";
 import CustomCarousel from "../carousel";
-import testi1 from "../../../assets/testimonial/testi1.png";
-import testi2 from "../../../assets/testimonial/testi2.png";
-import testi3 from "../../../assets/testimonial/testi3.png";
-import testi4 from "../../../assets/testimonial/testi4.png";
-import testi5 from "../../../assets/testimonial/testi5.png";
-import testi6 from "../../../assets/testimonial/testi6.png";
-import bg from "../../../assets/images/bg.png";
+import testi1 from "../../../../../assets/testimonial/testi1.png";
+import testi2 from "../../../../../assets/testimonial/testi2.png";
+import testi3 from "../../../../../assets/testimonial/testi3.png";
+import testi4 from "../../../../../assets/testimonial/testi4.png";
+import testi5 from "../../../../../assets/testimonial/testi5.png";
+import testi6 from "../../../../../assets/testimonial/testi6.png";
+import bg from "../../../../../assets/images/bg.png";
 
 const Testimonal = () => {
   const [activeStep, setActiveStep] = React.useState(0);

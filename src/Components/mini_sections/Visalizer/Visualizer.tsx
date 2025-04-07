@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './visualizer.module.css'
-import arrow from '../../../assets/visualizer/arrows.png'
-import visual from '../../../assets/visualizer/visual.gif'
-import sideImg from "../../../assets/visualizer/interior-design-with-photoframes-couch 3 (2).png"
-import imgUpload from "../../../assets/visualizer/image- 1.png"
+import arrow from '../../../../../assets/visualizer/arrows.png'
+import visual from '../../../../../assets/visualizer/visual.gif'
+import sideImg from "../../../../../assets/visualizer/interior-design-with-photoframes-couch 3 (2).png"
+import imgUpload from "../../../../../assets/visualizer/image- 1.png"
 const Visualizer = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);

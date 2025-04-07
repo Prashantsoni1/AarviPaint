@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from './exteriorIndex1.module.css'
-import background from "../../../assets/exterior/backgroundIndex1.png"
+import background from "../../../../../assets/exterior/backgroundIndex1.png"
 const ExteriorIndex1 = () => {
 
     return (

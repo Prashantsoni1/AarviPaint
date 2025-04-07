@@ -1,15 +1,15 @@
 import React from "react";
 import Styles from "./footer.module.css";
-import logo from "../../../assets/images/logo.png";
+import logo from "../../../../../assets/images/logo.png";
 import { styled } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid2";
-import appstore from "../../../assets/images/appstore.png";
-import playstore from "../../../assets/images/playstore.png";
-import phone from "../../../assets/icons/phone-call (1).png";
-import email from "../../../assets/icons/mail.png";
-import location from "../../../assets/icons/location.png"
+import appstore from "../../../../../assets/images/appstore.png";
+import playstore from "../../../../../assets/images/playstore.png";
+import phone from "../../../../../assets/icons/phone-call (1).png";
+import email from "../../../../../assets/icons/mail.png";
+import location from "../../../../../assets/icons/location.png"
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, WhatsApp } from "@mui/icons-material";
 

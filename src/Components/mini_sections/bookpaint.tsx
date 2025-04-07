@@ -1,10 +1,10 @@
 import React, { useState, ChangeEvent } from "react";
 import styles from "./bookpaint.module.css";
-import manPainting from "../../assets/booking_img.png";
-import image1 from "../../assets/house 1 (1).png";
-import image2 from "../../assets/painting-brush 1.png";
-import image3 from "../../assets/pantone 1 (1).png";
-import arrow from "../../assets/icons/right_arrow_blc.png";
+import manPainting from "../../../../assets/booking_img.png";
+import image1 from "../../../../assets/house 1 (1).png";
+import image3 from "../../../../assets/painting-brush 1.png";
+import image2 from "../../../../assets/pantone 1 (1).png";
+import arrow from "../../../../assets/icons/right_arrow_blc.png";
 const steps = [
   {
     count: 1,
