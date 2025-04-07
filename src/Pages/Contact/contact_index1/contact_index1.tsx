@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./contact_index1.module.css";
-import background from "../../../assets/contact/contact bg 1.png";
+import background from "../../../../public/assets/contact/contact bg 1.png";
 
 const ContactIndex1 = () => {
     return (

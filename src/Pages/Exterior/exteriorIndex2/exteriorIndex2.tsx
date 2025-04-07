@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './exteriorIndex2.module.css'
-import sideImage from "../../../../../assets/exterior/sideImage.png";
+import sideImage from "../../../../public/assets/exterior/sideImage.png";
 const ExteriorIndex2 = () => {
     const navigate = useNavigate();
     const handleNavigation = () => {

@@ -1,13 +1,13 @@
 
 import React from "react";
 import styles from './contact_index2.module.css';
-import locationIcon from "../../../../../assets/contact/location 2.png"
-import phoneIcon from "../../../../../assets/contact/phone-call 2.png"
-import emailIcon from "../../../../../assets/contact/mail 2.png"
-import fbIcon from "../../../../../assets/contact/facebook 1.png"
-import twitterIcon from "../../../../../assets/contact/twitter 1.png"
-import instagramIcon from "../../../../../assets/contact/instagram 1.png"
-import whatsappIcon from "../../../../../assets/contact/whatsapp 1.png"
+import locationIcon from "../../../../public/assets/contact/location 2.png"
+import phoneIcon from "../../../../public/assets/contact/phone-call 2.png"
+import emailIcon from "../../../../public/assets/contact/mail 2.png"
+import fbIcon from "../../../../public/assets/contact/facebook 1.png"
+import twitterIcon from "../../../../public/assets/contact/twitter 1.png"
+import instagramIcon from "../../../../public/assets/contact/instagram 1.png"
+import whatsappIcon from "../../../../public/assets/contact/whatsapp 1.png"
 const ContactIndex2 = () => {
   return (
     <div className={styles.main}>

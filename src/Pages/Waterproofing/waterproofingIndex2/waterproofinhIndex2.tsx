@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './waterproofingIndex2.module.css'
-import sideImage from "../../../../../assets/waterproofing/ProtectionComposite_Residential_Crop 4.png";
+import sideImage from "../../../../public/assets/waterproofing/ProtectionComposite_Residential_Crop 4.png";
 const WaterproofingIndex2 = () => {
     const navigate = useNavigate();
     const handleNavigation = () => {

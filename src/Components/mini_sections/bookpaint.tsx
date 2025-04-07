@@ -1,26 +1,26 @@
 import React, { useState, ChangeEvent } from "react";
 import styles from "./bookpaint.module.css";
-import manPainting from "../../../../assets/booking_img.png";
-import image1 from "../../../../assets/house 1 (1).png";
-import image3 from "../../../../assets/painting-brush 1.png";
-import image2 from "../../../../assets/pantone 1 (1).png";
-import arrow from "../../../../assets/icons/right_arrow_blc.png";
+import manPainting from "../../../public/assets/booking_img.png";
+import image1 from "../../../public/assets/house 1 (1).png";
+import image3 from "../../../public/assets/painting-brush 1.png";
+import image2 from "../../../public/assets/pantone 1 (1).png";
+import arrow from "../../../public/assets/icons/right_arrow_blc.png";
 const steps = [
   {
     count: 1,
     image: image1,
     description:
-      "Choose your house for painting with a variety of designs and options.",
+      "Sign up for site visit and home evaluation, free of cost",
   },
   {
     count: 2,
     image: image2,
-    description: "Select the painting tools and materials needed for the job.",
+    description: "Approve our Digital Quotation and choose your wall colour",
   },
   {
     count: 3,
     image: image3,
-    description: "Finalize the colors and patterns to personalize your space.",
+    description: "Witness flawless wall finish delivered on time by our experts",
   },
 ];
 interface FormData {
@@ -98,11 +98,8 @@ const BookPaint = () => {
                     <img
                       src={step.image}
                       alt={`Step ${index + 1}`}
-                      style={{
-                        width: "100%",
-                        maxWidth: "50px",
-                        height: "auto",
-                      }}
+                      className={styles.booking_step_icon}
+                      
                     />
                     <div className={styles.booking_count}>{step.count}</div>
                   </div>

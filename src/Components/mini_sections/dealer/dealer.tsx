@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "@mui/material/Container";
 import Styles from "./dealer.module.css";
-import phone from "../../../../../assets/Dealer/shop.png";
-import man from "../../../../../assets/Dealer/dealguid.png";
+import phone from "../../../../public/assets/Dealer/shop.png";
+import man from "../../../../public/assets/Dealer/dealguid.png";
 
 const Dealer = () => {
   const contentData ={

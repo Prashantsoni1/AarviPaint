@@ -53,3 +53,29 @@
   text-align: center;
   padding: 0 20px;
 }
+@media screen and (max-width: 768px) {
+  .gellery_main {
+    padding: 0;
+    flex-direction: column;
+  }
+  .gellery_main h1 {
+    color: #000000;
+    font-size: 70px;
+    margin: 0;
+    align-items: start;
+  }
+  .heading {
+    margin-left: 0;
+}
+.gellery_slide {
+  width: 100%;
+}
+.brouser_container img{
+  width: 90vw;
+
+ 
+  top: 0;
+  left:  0;
+  
+}
+}

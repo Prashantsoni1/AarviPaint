@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./slider.module.css";
-import image1 from "../../assets/banners/Interior (1) 1.png";
-import image2 from "../../assets/banners/Interior 1.png";
-import image3 from "../../assets/banners/banner1.png";
+import image1 from "../../../public/assets/banners/Interior (1) 1.png";
+import image2 from "../../../public/assets/banners/Interior 1.png";
+import image3 from "../../../public/assets/banners/banner1.png";
 import CustomCarousel from "./carousel"; 
 
 const InfiniteImageSlider = () => {

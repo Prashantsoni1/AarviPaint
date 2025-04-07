@@ -1,5 +1,5 @@
 .gellery_main{
-    background-image: url(../../../../../assets/images/footer.png);
+    background-image: url(../../../../public/assets/images/footer.png);
     padding: 50px 0 30px;
     display: flex;
     justify-content: end;
@@ -23,4 +23,19 @@
     top: 0;
     bottom: 0;
 
+}
+@media screen and (max-width: 768px) {
+    
+    .slider-image{
+        width: 291px;
+        margin: auto;
+    }
+    .gellery_slide{
+        width: 80%;
+    }
+    .gellery_main h1{
+        color: #fff;
+        font-size: 65px;
+        margin: 0 10px ;
+    }
 }

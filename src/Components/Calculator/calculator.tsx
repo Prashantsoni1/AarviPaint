@@ -10,10 +10,10 @@ import {
 } from "@mui/material";
 import "@fontsource/rubik-doodle-shadow";
 import "@fontsource/poppins";
-import interiorWallPaint from "../../../../assets/calculator/interior_Wall_Paint.png";
-import exterior from "../../../../assets/calculator/waterProofing.png";
-import colorGuide from "../../../../assets/calculator/colorGuide.jpeg";
-import arrow from '../../../../assets/calculator/down-arrow 2.png'
+import interiorWallPaint from "../../../public/assets/calculator/interior_Wall_Paint.png";
+import exterior from "../../../public/assets/calculator/waterProofing.png";
+import colorGuide from "../../../public/assets/calculator/colorGuide.jpeg";
+import arrow from '../../../public/assets/calculator/down-arrow 2.png'
 import styles from './calculator.module.css'
 
 const Calculator = () => {
@@ -29,17 +29,14 @@ const Calculator = () => {
     return (
         <Container maxWidth="lg" sx={{ py: 8 }}>
             <Box textAlign="center" mb={6}>
-                <Typography
-                    component="h1"
-                    variant="h3"
-                    color="black"
-                    gutterBottom
-                    sx={{ fontWeight: 400, fontFamily: 'Poppins', fontSize: 25 }}
+                <div
+                    className={styles.heading_calcu}
+                    
                 >
                     {contentData.heading}
-                </Typography>
+                </div>
                 {/* Line below the heading */}
-                <Box
+                {/* <Box
                     sx={{
                         width: "420px",
                         height: "2px",
@@ -48,7 +45,7 @@ const Calculator = () => {
                         borderRadius: "2px",
                         marginBottom: 3
                     }}
-                />
+                /> */}
                 <Typography
                     variant="h6"
                     color="text.secondary"

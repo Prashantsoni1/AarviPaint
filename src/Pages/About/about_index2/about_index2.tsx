@@ -1,16 +1,16 @@
 import React from "react";
-import happyClientImg from '../../../../../assets/about/aboutIndex2/public-relation 2.png'
-import workJobImg from '../../../../../assets/about/aboutIndex2/like 2.png'
-import locationImg from '../../../../../assets/about/aboutIndex2/location (1) 2.png'
-import workMemberImg from '../../../../../assets/about/aboutIndex2/group-chat 2.png'
+import happyClientImg from '../../../../public/assets/about/aboutIndex2/public-relation 2.png'
+import workJobImg from '../../../../public/assets/about/aboutIndex2/like 2.png'
+import locationImg from '../../../../public/assets/about/aboutIndex2/location (1) 2.png'
+import workMemberImg from '../../../../public/assets/about/aboutIndex2/group-chat 2.png'
 import Styles from './about_index2.module.css'
-import img1 from '../../../../../assets/about/aboutIndex2/image 21 (1).png'
-import img2 from '../../../../../assets/about/aboutIndex2/image 35 (1).png'
-import img3 from '../../../../../assets/about/aboutIndex2/image 37.png'
-import img4 from '../../../../../assets/about/aboutIndex2/image 40.png'
-import img5 from '../../../../../assets/about/aboutIndex2/living-room-interior_1048-9888 4 (1).png'
-import img6 from '../../../../../assets/about/aboutIndex2/traditional-house-architecture 4.png'
-import img7 from '../../../../../assets/about/aboutIndex2/image 36 (1).png'
+import img1 from '../../../../public/assets/about/aboutIndex2/image 21 (1).png'
+import img2 from '../../../../public/assets/about/aboutIndex2/image 35 (1).png'
+import img3 from '../../../../public/assets/about/aboutIndex2/image 37.png'
+import img4 from '../../../../public/assets/about/aboutIndex2/image 40.png'
+import img5 from '../../../../public/assets/about/aboutIndex2/living-room-interior_1048-9888 4 (1).png'
+import img6 from '../../../../public/assets/about/aboutIndex2/traditional-house-architecture 4.png'
+import img7 from '../../../../public/assets/about/aboutIndex2/image 36 (1).png'
 const AboutIndex2 = () => {
     const contentData = {
         heading: "ABOUT US",

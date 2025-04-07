@@ -1,5 +1,5 @@
 import React from 'react';
-import background from '../../../../../../assets/product/background.png';
+import background from '../../../../../public/assets/product/background.png';
 import Styles from './productDetail_index1.module.css';
 
 const ProductDetails1 = () => {

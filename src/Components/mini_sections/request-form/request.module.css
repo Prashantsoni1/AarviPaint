@@ -1,116 +1,115 @@
-.request_main{
-    position: relative;
-    width: 100%;
-    margin: auto;
+.request_main {
+  position: relative;
+  width: 100%;
+  margin: auto;
 }
+
 .request_section {
- 
-    margin: 150px auto 50px;
-    background-image: linear-gradient(180deg, #00738045, #007380c9), url(/src/assets/request/background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 50px ;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 150px auto 50px;
+  background-image: linear-gradient(180deg, #00738045, #007380c9), url(/src/assets/request/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
+
 .background {
   width: 100%;
- 
 }
+
 .request_content {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   color: #ffffff;
   text-align: center;
- 
 }
-.request_content h2{
+
+.request_content h2 {
   font-size: 30px;
   font-weight: 500;
   margin-top: 0;
 }
-.request_content p{
+
+.request_content p {
   width: 80%;
   margin: auto;
 }
+
 .appstore {
   display: flex;
   justify-content: center;
   gap: 15px;
-  
+  flex-wrap: wrap;
 }
+
 .appstore img {
-    width: 150px;
-    margin: auto;
-    margin-top: 30px;
-  }
-.side_phone{
-    position: absolute;
-    bottom: 0;
-    right: 3%;
-    width: 480px;
-    filter: drop-shadow(10px -5px 15px rgba(44, 44, 44, 0.39));
+  width: 150px;
+  margin-top: 30px;
 }
+
+.side_phone {
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  width: 480px;
+  filter: drop-shadow(10px -5px 15px rgba(44, 44, 44, 0.39));
+}
+
+.request_form {
+  width: 100%;
+  max-width: 500px;
+}
+
 .request_form input{
-  border: 1px solid #ffffff;
   width: 50%;
-  padding: 5px 10px; 
+}
+
+
+.request_form input,
+.request_form textarea {
+  border: 1px solid #ffffff;
+  padding: 10px;
   background-color: transparent;
   color: #ffffff;
   border-radius: 5px;
   height: 40px;
-}
-.request_form input::placeholder {
-  color: #ffffff; /* Light gray or any color you want */
-  opacity: 1; /* Ensure full visibility (default is 1) */
+
+  box-sizing: border-box;
 }
 .request_form textarea{
-  border: 1px solid #ffffff;
-  width: 477px;
-  padding: 5px 10px; 
-  background-color: transparent;
-  color: #ffffff;
-  border-radius: 5px;
-  /* margin-top: 10px; */
+  width: 100%;
 }
+
+.request_form input::placeholder,
 .request_form textarea::placeholder {
-  color: #ffffff; /* Light gray or any color you want */
-  opacity: 1; /* Ensure full visibility (default is 1) */
+  color: #ffffff;
+  opacity: 1;
 }
-.form_input{
+
+.request_form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form_input {
   display: flex;
-  
   gap: 10px;
   margin-bottom: 10px;
+  
 }
-/* .request_form button{
-  background: linear-gradient(180deg, #FF9B10, #E6D128);
-  color: #ffffff;
-  padding: 10px 20px;
-  border: 1px solid transparent;
-  width: 100%;
-  margin-top: 10px ;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.request_form button:hover{
-  background: #ffffff;
-  color: #FF9B10;
-  padding: 10px 20px;
-  border: 1px solid #FF9B10;
-  width: 100%;
-  margin-top: 10px ;
-  border-radius: 5px;
-  cursor: pointer;
-} */
+
 .hover_button {
   position: relative;
   display: inline-block;
   padding: 15px 40px;
   margin-top: 10px;
   font-size: 18px;
-  font-weight: bold;
-  color: white;
   font-weight: 500;
+  color: white;
   background: linear-gradient(180deg, #FF9B10, #E6D128);
   border: none;
   width: 100%;
@@ -127,7 +126,7 @@
   left: -60%;
   width: 200px;
   height: 100%;
-  background: url('../../../../../assets/logotop.png'); /* Replace with your image URL */
+  background: url('../../../../public/assets/logotop.png');
   background-size: cover;
   background-position: center;
   transition: transform 0.6s ease;
@@ -146,5 +145,57 @@
 .hover_button span {
   position: relative;
   z-index: 1;
-  
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .side_phone {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form_input {
+    flex-direction: column;
+  }
+
+  .side_phone {
+    display: none;
+  }
+
+  .appstore {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appstore img {
+    width: 140px;
+  }
+
+  .request_content h2 {
+    font-size: 24px;
+  }
+
+  .request_section {
+    padding: 30px 20px;
+    margin: 100px auto 30px;
+  }
+  .request_form input{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .request_content h2 {
+    font-size: 20px;
+  }
+
+  .hover_button {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+
+  .appstore img {
+    width: 120px;
+  }
 }

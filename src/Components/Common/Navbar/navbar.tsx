@@ -13,7 +13,7 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../../../../assets/navbar/arrvi_logo.png";
+import logo from "../../../../public/assets/navbar/arrvi_logo.png";
 import "@fontsource/poppins";
 
 const navItems = [

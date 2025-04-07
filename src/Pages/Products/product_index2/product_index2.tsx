@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './product_index2.module.css';
-import img1 from '../../../assets/product/image 27.png'
-import img2 from '../../../assets/product/image 28.png'
-import img3 from '../../../assets/product/0 1.png'
-import img4 from '../../../assets/product/image (6).png'
-import rightArrow from '../../../assets/product/down-arrow (1) 5.png'
+import img1 from '../../../../public/assets/product/image 27.png'
+import img2 from '../../../../public/assets/product/image 28.png'
+import img3 from '../../../../public/assets/product/0 1.png'
+import img4 from '../../../../public/assets/product/image (6).png'
+import rightArrow from '../../../../public/assets/product/down-arrow (1) 5.png'
 
 const products = [
     {

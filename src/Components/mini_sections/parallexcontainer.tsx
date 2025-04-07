@@ -2,7 +2,7 @@ import styles from "./parallex.module.css";
 
 const contentData = [
   {
-    id: 1,
+    id: 5,
     title: "Interior Emulsions",
     subtitle: "Effortless Elegance, Timeless Durability",
     description:
@@ -11,7 +11,7 @@ const contentData = [
     link: "/products",
   },
   {
-    id: 2,
+    id: 3,
     title: "Exterior Emulsions",
     subtitle: "Protection Meets Perfection",
     description:
@@ -20,7 +20,7 @@ const contentData = [
     link: "/products",
   },
   {
-    id: 3,
+    id: 2,
     title: "Enamel",
     subtitle: "Protection Meets Perfection",
     description:
@@ -38,7 +38,7 @@ const contentData = [
     link: "/services/waterproofing",
   },
   {
-    id: 5,
+    id: 1,
     title: "Interior & Exterior Emulsions",
     subtitle: "Seamless Beauty Inside and Out",
     description:
@@ -46,26 +46,30 @@ const contentData = [
     styleClass: "parallax-container5",
     link: "/products",
   },
-
 ];
 
 const ParallaxComponent = () => {
   return (
     <>
-      {contentData.map((item) => (
-        <section key={item.id} className={`${styles["parallax-container"]} ${styles[item.styleClass]}`}>
-          <div>
-            <h1>{item.title}</h1>
-            <h3>{item.subtitle}</h3>
-            <p>{item.description}</p>
-            <div className={styles.booking_button}>
-              <a href={item.link}>
-                <p className={styles.booking_btn}>View More</p>
-              </a>
+      {[...contentData]
+        .sort((a, b) => a.id - b.id)
+        .map((item) => (
+          <section
+            key={item.id}
+            className={`${styles["parallax-container"]} ${styles[item.styleClass]}`}
+          >
+            <div>
+              <h1>{item.title}</h1>
+              <h3>{item.subtitle}</h3>
+              <p>{item.description}</p>
+              <div className={styles.booking_button}>
+                <a href={item.link}>
+                  <p className={styles.booking_btn}>View More</p>
+                </a>
+              </div>
             </div>
-          </div>
-        </section>
-      ))}
+          </section>
+        ))}
     </>
   );
 };

@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import Styles from './budgetIndex1.module.css';
-import background from "../../../../../../assets/waterproofingBudget/3d-room-interior-with-classic-design-furniture (1) 2.png";
-import sideImg from "../../../../../../assets/waterproofingBudget/front-view-young-woman-white-blouse-holding-big-calculator-white-desk-office-female-emotion-feeling-job-worker-white 1.png";
+import background from "../../../../../public/assets/waterproofingBudget/3d-room-interior-with-classic-design-furniture (1) 2.png";
+import sideImg from "../../../../../public/assets/waterproofingBudget/front-view-young-woman-white-blouse-holding-big-calculator-white-desk-office-female-emotion-feeling-job-worker-white 1.png";
 
 const BudgetIndex1 = () => {
     const location = useLocation();

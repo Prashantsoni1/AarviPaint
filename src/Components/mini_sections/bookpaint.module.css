@@ -84,6 +84,7 @@
 
 .booking_button .bookingBox {
   background: rgba(235, 172, 109, 1) 100%;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.404);
   height: 40px;
   display: flex;
   padding-left: 20px;
@@ -96,7 +97,7 @@
   overflow: hidden;
   z-index: 999;
   transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 40px -17px inset, rgba(0, 0, 0, 0.3) 0px 24px 17px -46px inset;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 40px -17px inset, rgba(0, 0, 0, 0.3) 0px 24px 17px -46px inset; */
 }
 
 .booking_button .bookingBox::before {
@@ -106,7 +107,7 @@
   left: -60%;
   width: 100px;
   height: 100%;
-  background: url('../../../../assets/logotop.png');
+  background: url('../../../public/assets/logotop.png');
   /* Replace with your image URL */
   background-size: cover;
   background-position: center;
@@ -120,10 +121,9 @@
 
 .booking_button .bookingBox:hover {
   color: black;
-  background: linear-gradient(157deg,
-      rgba(242, 192, 142, 1) 75%,
-      rgba(235, 172, 109, 1) 100%);
-  box-shadow: #0000004d 4px 4px 12px;
+  background: rgb(238, 165, 92) 100%;
+  box-shadow: #0000004d 4px 4px 12px,  inset 0px 0px 10px rgba(0, 0, 0, 0.404);
+  ;
 }
 
 .booking_button .bookingBox p {
@@ -257,4 +257,117 @@
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 15px;
+}
+.booking_step_icon{
+  width: 50px;
+  height: 50px;
+}
+
+/* Tablet (≤ 992px) */
+@media screen and (max-width: 992px) {
+  .main_bg {
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .service_img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .booking_step {
+    width: 100%;
+  }
+
+  .booking_heading {
+    width: 80%;
+    font-size: 22px;
+  }
+
+  .booking_steps_contain {
+    /* flex-direction: column; */
+    gap: 20px;
+  }
+
+  .booking_step_icon_count {
+    width: 80px;
+    height: 80px;
+  }
+
+  .booking_count {
+    width: 20px;
+    height: 20px;
+  }
+
+  .booking_step_container p {
+    width: 100%;
+  }
+
+  .booking_button {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .booking_button .bookingBox {
+    justify-content: center;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .inputRow {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .modal {
+    width: 90%;
+  }
+
+  .button {
+    width: 60%;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .service_img {
+    display: none; /* Hide image 1 on small screens */
+  }
+
+  .booking_heading {
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .booking_step_icon_count {
+    width: 70px;
+    height: 70px;
+  }
+  .booking_step_icon{
+    width: 30px;
+    height: 30px;
+  }
+
+  .booking_count {
+    width: 18px;
+    height: 18px;
+  }
+
+  .booking_button .bookingBox {
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .toggleContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modalContent {
+    gap: 15px;
+  }
 }

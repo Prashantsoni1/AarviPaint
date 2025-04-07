@@ -11,7 +11,7 @@ interface CustomCarouselProps {
 const CustomCarousel: React.FC<CustomCarouselProps> = ({
   items,
   autoPlay = true,
-  slidesToSlide = { desktop: 3, tablet: 2, mobile: 1 }, // Default values for slidesToSlide
+  slidesToSlide = { desktop: 3, tablet: 2, mobile: 1}, // Default values for slidesToSlide
 }) => {
   const responsive = {
     desktop: {
@@ -20,12 +20,12 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({
       slidesToSlide: slidesToSlide.desktop, // Slides to slide
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 769 },
       items: slidesToSlide.tablet, // Adjusted for responsive slide count
       slidesToSlide: slidesToSlide.tablet, // Slides to slide
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 768  , min: 0 },
       items: slidesToSlide.mobile, // Adjusted for responsive slide count
       slidesToSlide: slidesToSlide.mobile, // Slides to slide
     },

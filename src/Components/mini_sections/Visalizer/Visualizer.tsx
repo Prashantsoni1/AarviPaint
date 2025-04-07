@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './visualizer.module.css'
-import arrow from '../../../../../assets/visualizer/arrows.png'
-import visual from '../../../../../assets/visualizer/visual.gif'
-import sideImg from "../../../../../assets/visualizer/interior-design-with-photoframes-couch 3 (2).png"
-import imgUpload from "../../../../../assets/visualizer/image- 1.png"
+import arrow from '../../../../public/assets/visualizer/arrows.png'
+import visual from '../../../../public/assets/visualizer/visual.gif'
+import sideImg from "../../../../public/assets/visualizer/interior-design-with-photoframes-couch 3 (2).png"
+import imgUpload from "../../../../public/assets/visualizer/image- 1.png"
 const Visualizer = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -25,11 +25,11 @@ const Visualizer = () => {
           <p className={Styles.Title} data-aos="zoom-in">{contentData.paragraph}</p>
 
           <div className={Styles.visualizer}>
-            <img src={arrow} alt="Arrow" className={Styles.arrow} data-aos="fade-right" data-aos-offset="500" />
+            <img src={arrow} alt="Arrow" className={Styles.arrow} data-aos="zoom-in" data-aos-offset="500" />
             <div className={Styles.visual} onClick={() => setIsOpen(true)} style={{ cursor: "pointer" }} >
               <img src={visual} alt="Visual" data-aos="zoom-in" data-aos-offset="700" />
             </div>
-            <div data-aos="fade-left" data-aos-offset="500">
+            <div data-aos="zoom-in" data-aos-offset="500">
               <img src={arrow} alt="Arrow" className={Styles.arrow2} />
 
             </div>
