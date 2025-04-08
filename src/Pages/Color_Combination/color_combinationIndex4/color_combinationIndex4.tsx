@@ -33,7 +33,7 @@ const ColorCombinationIndex4: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Right section */}
+                {/* Right section */} 
                 <div className={Styles.rightContainer}>
 
                     {/* All Colors Section */}

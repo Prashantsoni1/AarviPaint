@@ -1,13 +1,15 @@
 import React from "react";
 import "@fontsource/poppins";
 import Styles from './about_index3.module.css'
-import sideImg from '../../../../public/assets/about/aboutIndex3/man-with-fan .png'
+import sideImg from '../../../../public/assets/about/aboutIndex3/man-with-fan .png';
+
+
 const AboutIndex3 = () => {
     return (
         <div className={Styles.mainContainer}>
-
+            
             <div className={Styles.container1}>
-                <div className={Styles.head}>
+            <div className={Styles.head}>
                     <div className={Styles.heading1}>READY TO WORK PASSION</div>
                     <div className={Styles.line}></div>
                 </div>
@@ -20,10 +22,13 @@ const AboutIndex3 = () => {
                     Our product ranges are easy to identify and are positioned to address consumers’
                     specific needs.</p>
             </div>
+
             <div className={Styles.container2}>
-                <img src={sideImg} alt="" className={Styles.sideImage} />
+            <img src={sideImg} alt="" className={Styles.sideImage} />
+
             </div>
         </div>
+        
     );
 };
 

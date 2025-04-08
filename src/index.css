@@ -70,3 +70,44 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* Small screens (phones) */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Large screens (laptops) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* Extra large screens (desktops) */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2XL screens */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

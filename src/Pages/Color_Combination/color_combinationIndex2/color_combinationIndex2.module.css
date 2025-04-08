@@ -33,3 +33,17 @@
     text-align: center;
 
 }
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        padding: 10px;
+    }
+    .heading {
+        font-size: 25px;
+    }
+}

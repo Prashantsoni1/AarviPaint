@@ -6,7 +6,7 @@
 
 .request_section {
   margin: 150px auto 50px;
-  background-image: linear-gradient(180deg, #00738045, #007380c9), url(/src/assets/request/background.jpg);
+  background-image: linear-gradient(180deg, #00738045, #007380c9), url(/public/assets/request/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;

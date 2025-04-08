@@ -1,6 +1,6 @@
 import React from "react";
 
-import Styles from './color_combinationIndex2.module.css'
+import Styles from './color_combinationIndex2.module.css';
 
 const ColorCombinationIndex2 = () => {
 
@@ -9,7 +9,7 @@ const ColorCombinationIndex2 = () => {
         <div className={Styles.mainContainer}>
             <div className={Styles.container}>
                 <div className={Styles.heading}>
-                    Discover the Colors of the Future
+                    Discover the Colors of the Future 
                 </div>
                 <div className={Styles.para}>
                     Colors have the power to transform spaces, evoke emotions, and set the perfect mood. Explore our handpicked

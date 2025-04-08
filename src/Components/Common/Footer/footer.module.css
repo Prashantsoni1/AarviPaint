@@ -67,6 +67,7 @@
 }
 .footer_third ul li a {
   color: #414141;
+  width: 90%;
 }
 .footer_third ul li img{
     width: 20px;
@@ -93,5 +94,22 @@
 .copyright{
     text-align: center;
     border-top: 1px solid #414141;
-    padding-bottom: 0 !important;
+    /* padding-bottom: 20px; */
+}
+@media screen and (max-width: 768px){
+  .footer_main {
+    background-image: url(../../../../public/assets/images/footer.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: auto ;
+    padding-top: 20px;
+    margin: 0;
+  }
+  .footer_second , .footer_third{
+    margin-left: 0;
+}
+.footer_second ul ,.footer_third ul{
+  padding: 5px;
+}
+
 }

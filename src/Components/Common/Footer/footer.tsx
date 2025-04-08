@@ -25,7 +25,7 @@ const Footer = () => {
     }),
   }));
 
-  return (
+  return ( 
     <>
       <div className={Styles.footer_main}>
         <Container>
@@ -40,7 +40,7 @@ const Footer = () => {
                 </p>
               </div>
             </Grid>
-            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+            <Grid size={{ xs: 6, sm: 6, md: 3 }}>
               <div className={Styles.footer_second}>
                 <h3>Services</h3>
                 <div>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
               </div>
             </Grid>
-            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
+            <Grid size={{ xs: 6, sm: 6, md: 3 }}>
               <div className={Styles.footer_third}>
                 <h3>Contact</h3>
                 <div>
