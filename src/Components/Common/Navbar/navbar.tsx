@@ -18,7 +18,7 @@ import "@fontsource/poppins";
 
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/about" },
+  { label: "About Us", path: "/about" },
   { label: "Color Palettes", path: "/colorCombination" },
   { label: "Products", path: "/products" },
   { label: "Contact", path: "/contact" },

@@ -66,6 +66,7 @@
   }
   .heading {
     margin-left: 0;
+    margin: 20px 0;
 }
 .gellery_slide {
   width: 100%;
@@ -77,5 +78,12 @@
   top: 0;
   left:  0;
   
+}
+.main_testimonial img{
+  width: 100%;
+}
+.main_testimonial{
+  width: 90%;
+  margin: auto;
 }
 }

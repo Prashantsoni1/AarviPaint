@@ -18,7 +18,7 @@ const ProductDetails2 = () => {
             <div className={Styles.container}>
                 
                 <div className={Styles.box}>
-                    <img src={img1} alt="" />
+                    <img src={img1} alt=""/>
                 </div>
                 <div className={Styles.containerRight}>
                     <div>

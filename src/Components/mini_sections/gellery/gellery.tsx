@@ -12,7 +12,7 @@ import gellery6 from "../../../../public/assets/gellery/gellery6.png";
 import gellery7 from "../../../../public/assets/gellery/gellery7.png";
 import gellery8 from "../../../../public/assets/gellery/gellery8.png";
 
-const Gellery = () => { 
+const Gellery = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
@@ -42,7 +42,7 @@ const Gellery = () => {
     };
   }, [images.length]);
   const carouselItems = images.map((image, index) => (
-    <div key={index} style={{marginBottom:"20px"}}>
+    <div key={index} style={{ marginBottom: "20px" }}>
       <img
         src={image}
         alt={`Slide ${index + 1}`}
@@ -62,7 +62,7 @@ const Gellery = () => {
     <>
       <section className={Styles.gellery_main}>
         <div className={Styles.heading}>
-        <h1>Gellery</h1>
+          <h1>Gallery</h1>
         </div>
         <div className={Styles.gellery_slide}>
           <CustomCarousel

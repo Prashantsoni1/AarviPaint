@@ -79,16 +79,18 @@
 }
 
 @media screen and (max-width: 767px) {
+   
 .container{
     flex-direction: column;
+    
 }
 .leftContainer{
     margin-top: 10px;
-    width: 100%;
+    width: 95%;
     text-align: center;
 }
 .rightContainer {
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -96,7 +98,22 @@
     margin-top: 50px;
 }
 .allcodesBox {
-    width: 100vw;
+    width: 95vw;
+    gap: 10px;
     
+}
+.codesContainer{
+    margin: auto;
+    width: 100%;
+}
+.colorBox{
+    width: 40%;
+    margin: auto;
+    
+}
+.heading{
+    font-size: 25px;
+    line-height: 25px;
+    margin: 10px 0;
 }
 }

@@ -51,9 +51,14 @@
     margin-left: 0;
 }
 .gellery_slide {
-  width: 100%;
+  width: 95%;
+  margin: auto;
 }
-.brouser_container img{
-  width: 100vw;
+/* .brouser_container img{
+  width: 90vw;
+  margin-left: 10px;
+} */
+.slider-image {
+  width: 95vw;
 }
 }

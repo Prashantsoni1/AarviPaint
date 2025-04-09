@@ -145,18 +145,21 @@
     line-height: 40px;
   }
   .arrow {
-    width: 150px;
+    width: 120px;
   }
   .arrow2 {
     transform: rotate(180deg);
-    width: 150px;
+    width: 120px;
   }
   .visual img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
     border-radius: 50%;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 7px;
+  }
+  .visualizer {
+    gap: 5px;
   }
 }

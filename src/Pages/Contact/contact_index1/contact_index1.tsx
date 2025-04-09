@@ -12,7 +12,7 @@ const ContactIndex1 = () => {
                     Have questions or need assistance? Get in touch with us! Our team is here
                     to help with inquiries about our products, services, or any other concerns.
                     Reach out via phone, email, or by filling out the contact form below. We’ll
-                    get back to you as soon as possible!
+                    get back to you as soon as possible! 
                 </div>
             </div>
         </div>

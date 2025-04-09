@@ -22,7 +22,7 @@ const ContactIndex2 = () => {
             allowFullScreen
             loading="lazy"
           ></iframe>
-        </div>
+        </div> 
 
         {/* Contact Details Section */}
         <div className={styles.contactDetails}>

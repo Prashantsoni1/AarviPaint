@@ -111,5 +111,9 @@
 .footer_second ul ,.footer_third ul{
   padding: 5px;
 }
+.footer_third ul li a{
+  width: 95%;
+  overflow: hidden;
+}
 
 }

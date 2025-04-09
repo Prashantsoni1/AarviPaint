@@ -4,7 +4,7 @@ import img1 from '../../../../../public/assets/product/armchair-green-living-roo
 import img2 from '../../../../../public/assets/product/white-sideboard-living-room-interior-with-copy-space 2.png'
 const ProductDetails3 = () => {
     return (
-        <div className={Styles.main}>
+        <div className={Styles.main}> 
             <div className={Styles.title}>
                 <div className={Styles.heading}>Description</div>
                 <div className={Styles.line}></div>

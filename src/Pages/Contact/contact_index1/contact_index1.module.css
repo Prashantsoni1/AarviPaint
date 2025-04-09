@@ -38,14 +38,35 @@
     z-index: 1;
 }
 
-.textContainer h1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
-.textContainer p {
-    font-size: 16px;
-    line-height: 1.5;
-    opacity: 0.9;
-} 
+@media (max-width: 768px) {
+    .main{
+        width: 100%;
+        margin: auto;
+    }
+    .heading {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 45px;
+        letter-spacing: 2%;
+        text-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.31);
+    
+    }
+    
+    .para {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 14px;
+
+        text-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.25);
+    
+    }
+    .textContainer {
+        position: absolute;
+        max-width: 95%;
+        z-index: 1;
+        padding-left: 10px;
+        margin: auto;
+    }
+    
+}

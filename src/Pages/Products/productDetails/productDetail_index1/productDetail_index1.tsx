@@ -14,7 +14,7 @@ const ProductDetails1 = () => {
         <div className={Styles.nav}>
           <li>Home /</li>
           <li>Products /</li>
-          <li>Product Detail </li>
+          <li>Product Detail</li>
         </div>
       </div>
     </div>
