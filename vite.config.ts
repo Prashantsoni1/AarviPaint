@@ -5,8 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   css: {
-    modules: {
-      scopeBehaviour: 'local', // Use 'local' for CSS Modules
-    },
+    postcss: './postcss.config.js' // or .cjs if using that
   },
-})
+  },
+)

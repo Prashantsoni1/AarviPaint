@@ -62,7 +62,7 @@ const ParallaxComponent = () => {
               <h1>{item.title}</h1>
               <h3>{item.subtitle}</h3>
               <p>{item.description}</p>
-              <div className={styles.booking_button}>
+              <div className={styles.booking_button}> 
                 <a href={item.link}>
                   <p className={styles.booking_btn}>View More</p>
                 </a>
