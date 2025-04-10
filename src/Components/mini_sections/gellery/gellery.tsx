@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Styles from "./gellery.module.css";
 import CustomCarousel from "../../mini_sections/carousel";
 import gellery1 from "../../../../public/assets/gellery/gellery1.png";
 import gellery2 from "../../../../public/assets/gellery/gellery2.png";
@@ -15,8 +14,8 @@ import gellery8 from "../../../../public/assets/gellery/gellery8.png";
 const Gellery = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -41,12 +40,13 @@ const Gellery = () => {
       clearInterval(timer);
     };
   }, [images.length]);
+
   const carouselItems = images.map((image, index) => (
-    <div key={index} style={{ marginBottom: "20px" }}>
+    <div key={index} className="mb-5">
       <img
         src={image}
         alt={`Slide ${index + 1}`}
-        className={Styles["slider-image"]}
+        className=" w-[250px] md:w-[90%] p-5 h-auto mx-auto "
         data-aos="zoom-in"
         data-aos-offset="500"
       />
@@ -54,25 +54,30 @@ const Gellery = () => {
   ));
 
   const slidesToSlide = {
-    desktop: 4,
+    desktop: 3,
     tablet: 2,
     mobile: 1,
   };
+
   return (
-    <>
-      <section className={Styles.gellery_main}>
-        <div className={Styles.heading}>
-          <h1>Gallery</h1>
-        </div>
-        <div className={Styles.gellery_slide}>
-          <CustomCarousel
-            items={carouselItems}
-            autoPlay={true}
-            slidesToSlide={slidesToSlide}
-          />
-        </div>
-      </section>
-    </>
+    <section 
+      className="relative bg-[url('../../../../public/assets/images/footer.png')] mb-[200px] py-[50px] md:py-[30px] flex justify-end overflow-hidden"
+      style={{ backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
+      {/* Rotated Heading */}
+      <div className="absolute left-[-69px] top-[40%]  -rotate-90 origin-left-top z-10 ">
+        <h1 className="text-white text-[55px] md:text-[75px] leading-0 p-0 font-bold m-0">Gallery</h1>
+      </div>
+
+      {/* Carousel Section */}
+      <div className="w-[80%] md:w-[90%] mr-2.5 md:mr-0">
+        <CustomCarousel
+          items={carouselItems}
+          autoPlay={true}
+          slidesToSlide={slidesToSlide}
+        />
+      </div>
+    </section>
   );
 };
 

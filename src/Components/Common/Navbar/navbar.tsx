@@ -1,20 +1,7 @@
 import React, { useState } from "react";
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemButton,
-  Box,
-  Typography,
-} from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
-import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../../../../public/assets/navbar/arrvi_logo.png";
-import "@fontsource/poppins";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -34,99 +21,101 @@ const StickyNavbar = () => {
 
   return (
     <>
-      <AppBar
-        position="sticky"
-        sx={{
-          backgroundColor: "white",
-          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-          color: "black",
-          zIndex: 1100,
-        }}
-      >
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Box>
+      {/* Main Navbar */}
+      <nav className="sticky top-0 bg-white shadow-[0px_4px_10px_rgba(0,0,0,0.1)] z-[1100]">
+        <div className="flex justify-between items-center px-4 py-3 max-w-7xl mx-auto">
+          {/* Logo */}
+          <div>
             <img
               src={logo}
               alt="logo"
-              style={{ width: "96.75px", height: "54px", objectFit: "contain" }}
+              className="w-[96.75px] h-[54px] object-contain"
             />
-          </Box>
+          </div>
 
-          {/* Desktop Nav */}
-          <Box sx={{ display: { xs: "none", md: "flex" }, gap: 3, fontFamily: "Poppins" }}>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex gap-6 font-['Poppins']">
             {navItems.map((item) => (
-              <Typography
+              <Link
                 key={item.path}
-                component={Link}
                 to={item.path}
-                sx={{
-                  textDecoration: "none",
-                  color: location.pathname === item.path ? "#8224E3" : "black",
-                  fontWeight: location.pathname === item.path ? "bold" : "normal",
-                  transition: "color 0.3s ease",
-                  "&:hover": { color: "#8224E3" },
-                }}
+                className={`no-underline transition-colors duration-300 hover:text-[#8224E3] ${
+                  location.pathname === item.path
+                    ? "text-[#8224E3] font-bold"
+                    : "text-black"
+                }`}
               >
                 {item.label}
-              </Typography>
+              </Link>
             ))}
-          </Box>
+          </div>
 
-          {/* Mobile Menu Icon */}
-          <IconButton
-            edge="end"
-            color="inherit"
-            aria-label="menu"
+          {/* Mobile Menu Button */}
+          <button
             onClick={toggleDrawer}
-            sx={{ display: { xs: "block", md: "none" } }}
+            className="block md:hidden bg-transparent border-0 text-black focus:outline-none"
+            aria-label="Toggle menu"
           >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
+            <FiMenu className="w-6 h-6" />
+          </button>
+        </div>
+      </nav>
 
-      {/* Sidebar with Smooth Transition */}
-      <Box
-        sx={{
-          position: "fixed",
-          top: 0,
-          right: open ? 0 : "-250px",
-          height: "100vh",
-          width: "250px",
-          backgroundColor: "white",
-          boxShadow: "-2px 0px 10px rgba(0, 0, 0, 0.1)",
-          zIndex: 1200,
-          overflowY: "auto",
-          transition: "right 0.3s ease-in-out",
-        }}
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed inset-0 z-[1200] transition-all duration-300 ease-in-out ${
+          open ? "visible bg-black bg-opacity-50" : "invisible"
+        }`}
+        onClick={toggleDrawer}
       >
-        <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-          <IconButton onClick={toggleDrawer}>
-            <CloseIcon />
-          </IconButton>
-        </Box>
-
-        <ListItem sx={{ justifyContent: "center", paddingY: 2 }}>
-          <img
-            src={logo}
-            alt="logo"
-            style={{ width: "96.75px", height: "54px", objectFit: "contain" }}
-          />
-        </ListItem>
-
-        <List>
-          {navItems.map((item) => (
-            <ListItemButton
-              key={item.path}
-              component={Link}
-              to={item.path}
+        <div
+          className={`absolute top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ${
+            open ? "translate-x-0" : "translate-x-full"
+          }`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Close Button */}
+          <div className="flex justify-end p-4">
+            <button
               onClick={toggleDrawer}
+              className="text-black bg-transparent border-0 focus:outline-none"
+              aria-label="Close menu"
             >
-              <ListItemText primary={item.label} />
-            </ListItemButton>
-          ))}
-        </List>
-      </Box>
+              <FiX className="w-6 h-6" />
+            </button>
+          </div>
+
+          {/* Logo */}
+          <div className="flex justify-center py-4">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-[96.75px] h-[54px] object-contain"
+            />
+          </div>
+
+          {/* Mobile Navigation Links */}
+          <nav className="mt-4">
+            <ul>
+              {navItems.map((item) => (
+                <li key={item.path}>
+                  <Link
+                    to={item.path}
+                    onClick={toggleDrawer}
+                    className={`block px-6 py-3 transition-colors duration-200 ${
+                      location.pathname === item.path
+                        ? "text-[#8224E3] font-bold"
+                        : "text-black hover:text-[#8224E3]"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
     </>
   );
 };

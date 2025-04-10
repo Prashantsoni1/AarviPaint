@@ -13,50 +13,60 @@ import "@fontsource/poppins";
 import interiorWallPaint from "../../../public/assets/calculator/interior_Wall_Paint.png";
 import exterior from "../../../public/assets/calculator/waterProofing.png";
 import colorGuide from "../../../public/assets/calculator/colorGuide.jpeg";
-import arrow from '../../../public/assets/calculator/down-arrow 2.png'
-import styles from './calculator.module.css'
+import arrow from "../../../public/assets/calculator/down-arrow 2.png";
+import styles from "./calculator.module.css";
 
 const Calculator = () => {
-    const images = [
-        { src: interiorWallPaint, alt: "Interior Wall Paint", title: "Paint Budget Calculator" },
-        { src: exterior, alt: "Exterior Paint", title: "Waterproofing Calculator" },
-        { src: colorGuide, alt: "Color Guide", title: "Home Color Guide" },
-    ];
     const contentData = {
         heading: "Plan Your Perfect Paint Budget",
-        paragraph: " Take the guesswork out of painting costs. Measure, choose, and  calculate effortlessly to design a budget that fits your vision and space. Transform your walls with confidence!",
-    }
+        paragraph:
+            "Take the guesswork out of painting costs. Measure, choose, and calculate effortlessly to design a budget that fits your vision and space. Transform your walls with confidence!",
+    };
+
+    const cardData = [
+        {
+            src: interiorWallPaint,
+            alt: "Interior Wall Paint",
+            title: "Paint Budget Calculator",
+            link: "/paint-budget",
+        },
+        {
+            src: exterior,
+            alt: "Exterior Paint",
+            title: "Waterproofing Calculator",
+            link: "/waterproofing",
+        },
+        {
+            src: colorGuide,
+            alt: "Color Guide",
+            title: "Home Color Guide",
+            link: "/color-guide",
+        },
+    ];
+
     return (
-        <Container maxWidth="lg" sx={{ py: 8 }}>
+        <Container maxWidth="lg" sx={{ py: 8 }} className="card_img">
             <Box textAlign="center" mb={6}>
-                <div
-                    className={styles.heading_calcu}
-                    
-                >
+                <div className={styles.heading_calcu}>
                     {contentData.heading}
                 </div>
-                {/* Line below the heading */}
-                {/* <Box
-                    sx={{
-                        width: "420px",
-                        height: "2px",
-                        backgroundColor: "black",
-                        margin: "0 auto",
-                        borderRadius: "2px",
-                        marginBottom: 3
-                    }}
-                /> */}
                 <Typography
                     variant="h6"
                     color="text.secondary"
-                    sx={{ maxWidth: "800px", mx: "auto", mb: 6, fontFamily: 'Poppins', fontSize: 18 }}
+                    sx={{
+                        maxWidth: "800px",
+                        mx: "auto",
+                        mb: 6,
+                        fontFamily: "Poppins",
+                        fontSize: 18,
+                    }}
                 >
                     {contentData.paragraph}
                 </Typography>
             </Box>
 
             <Grid container spacing={4} justifyContent="center">
-                {images.map((image, index) => (
+                {cardData.map((card, index) => (
                     <Grid item xs={12} sm={6} md={4} key={index}>
                         <Card
                             sx={{
@@ -68,15 +78,14 @@ const Calculator = () => {
                                 borderRadius: 2,
                             }}
                         >
-                            {/* Image */}
                             <CardMedia
                                 component="img"
                                 height="400"
-                                image={image.src}
-                                alt={image.alt}
+                                image={card.src}
+                                alt={card.alt}
                                 sx={{ objectFit: "cover" }}
                             />
-                            {/* Index Number at Top Right */}
+
                             <Box
                                 sx={{
                                     position: "absolute",
@@ -91,7 +100,6 @@ const Calculator = () => {
                                 {index + 1}
                             </Box>
 
-                            {/* Gradient Overlay */}
                             <Box
                                 sx={{
                                     position: "absolute",
@@ -103,7 +111,7 @@ const Calculator = () => {
                                         "linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.1))",
                                 }}
                             />
-                            {/* Card Content (Optional) */}
+
                             <CardContent
                                 sx={{
                                     position: "absolute",
@@ -114,17 +122,13 @@ const Calculator = () => {
                                 }}
                             >
                                 <Box className={styles.caculator_button}>
-                                    {/* Overlay Box on the Button */}
                                     <Box className={styles.overlay} />
-
-                                    <a href="#">
-                                        <p className={styles.caculator_btn}>{image.title}</p>
+                                    <a href={card.link}>
+                                        <p className={styles.caculator_btn}>{card.title}</p>
                                         <img src={arrow} alt="arrow" />
                                     </a>
                                 </Box>
                             </CardContent>
-
-
                         </Card>
                     </Grid>
                 ))}
@@ -134,4 +138,3 @@ const Calculator = () => {
 };
 
 export default Calculator;
-

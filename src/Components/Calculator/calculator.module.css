@@ -33,6 +33,9 @@
 .caculator_button a img{
   width: 20px;
 }
+.card_img img{
+  height: 100% !important;
+}
 .caculator_button a{
   display: flex;
   justify-content: space-between;
