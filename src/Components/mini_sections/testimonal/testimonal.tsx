@@ -44,12 +44,13 @@ const Testimonal = () => {
 
   const carouselItems = testimonials.map((testimonial, index) => (
     <div key={index} data-aos="zoom-in" data-aos-offset="500">
-      <div className="bg-white rounded-[20px] shadow-[0_5px_15px_rgba(0,0,0,0.35)] w-[275px] sm:w-[90%] mx-auto mb-[30px]">
+      <div className="bg-white rounded-[20px] shadow-[0_5px_15px_rgba(0,0,0,0.35)] w-full md:w-[90%] mx-auto mb-[30px]">
         <img
           src={testimonial.image}
           alt={`Slide ${index + 1}`}
-          className="w-[275px] sm:w-full h-[200px] object-cover rounded-t-[20px]"
+          className="w-[98vw]  h-auto object-cover rounded-t-[20px]"
         />
+
         <div className="text-center px-5 py-3">
           <p className="text-sm">"{testimonial.text}"</p>
           <h4 className="mt-2 font-semibold">{testimonial.name}</h4>
@@ -66,7 +67,7 @@ const Testimonal = () => {
 
   return (
     <section className="relative z-[999] flex flex-col lg:flex-row items-center justify-between py-[50px] px-2">
-      <div className="absolute top-0 left-[15%] lg:block hidden w-[75%] rotate-[-6deg]">
+      <div className="absolute left-0 md:left-[20%]  top-0 w-full md:w-[75%] rotate-[-6deg]  lg:block">
         <img src={bg} alt="Background" className="w-full" />
       </div>
 

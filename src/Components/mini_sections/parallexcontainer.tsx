@@ -9,6 +9,7 @@ const contentData = [
       "Aarvi Paints’ range of premium Interior Emulsions transforms your walls into a masterpiece with ease. Designed for effortless application and vibrant, long-lasting finishes, our water-based formulas ensure beauty that endures. Whether your style calls for ultimate sophistication (Diamond), classic charm (Pearl), versatile simplicity (Quartz), or budget-friendly brilliance (Crystal), Aarvi Paints caters to every dream and design.",
     desktopBg: "/assets/bg1.png",
     mobileBg: "/assets/bgmob1.png",
+    color:"#000",
     link: "/products",
   },
   {
@@ -19,6 +20,7 @@ const contentData = [
       "Aarvi Paints’ Exterior Emulsions combine cutting-edge technology with stunning aesthetics to shield your home from the harshest elements while enhancing its beauty. Choose from weather-resistant elegance (Platinum Shield), timeless resilience (Golden Guard), adaptable strength (Silver Coat), or cost-effective durability (Bronze Shield). With superior UV protection and anti-fungal properties, your home will stay radiant and safeguarded for years.",
     desktopBg: "/assets/bg2.png",
     mobileBg: "/assets/bgmob2.png",
+    color:"#000",
     link: "/products",
   },
   {
@@ -29,6 +31,7 @@ const contentData = [
       "Aarvi Paints’ Exterior Emulsions combine cutting-edge technology with stunning aesthetics to shield your home from the harshest elements while enhancing its beauty. Choose from weather-resistant elegance (Platinum Shield), timeless resilience (Golden Guard), adaptable strength (Silver Coat), or cost-effective durability (Bronze Shield). With superior UV protection and anti-fungal properties, your home will stay radiant and safeguarded for years.",
     desktopBg: "/assets/bg3.png",
     mobileBg: "/assets/bgmob3.png",
+    color:"#fff",
     link: "/products",
   },
   {
@@ -39,6 +42,7 @@ const contentData = [
       "Aarvi Paints’ Exterior Emulsions combine cutting-edge technology with stunning aesthetics to shield your home from the harshest elements while enhancing its beauty. Choose from weather-resistant elegance (Platinum Shield), timeless resilience (Golden Guard), adaptable strength (Silver Coat), or cost-effective durability (Bronze Shield). With superior UV protection and anti-fungal properties, your home will stay radiant and safeguarded for years.",
     desktopBg: "/assets/bg4.png",
     mobileBg: "/assets/bgmob4.png",
+    color:"#000",
     link: "/services/waterproofing",
   },
   {
@@ -49,6 +53,7 @@ const contentData = [
       "Aarvi Paints offers a versatile range of Interior & Exterior Emulsions that ensure your home shines in every corner. With innovative formulas that blend durability, vibrancy, and effortless application, our collection includes luxurious finishes (Opal Touch), enduring appeal (Sapphire Glow), all-weather performance (Amber Flex), and economical brilliance (Citrine Style). Aarvi Paints ensures your home makes a lasting impression, inside and out.",
     desktopBg: "/assets/bg5.png",
     mobileBg: "/assets/bgmob5.png",
+    color:"#fff",
     link: "/products",
   },
 ];
@@ -69,15 +74,15 @@ const ParallaxComponent = () => {
         .sort((a, b) => a.id - b.id)
         .map((item) => {
           const bgImage = isMobile ? item.mobileBg : item.desktopBg;
+          
           return (
             <section
               key={item.id}
-              className={`
-                min-h-[90vh] bg-cover bg-center bg-no-repeat 
+              className={`min-h-[90vh] bg-cover bg-center bg-no-repeat 
                 flex md:items-center  px-6 py-20 md:py-0
-                text-white [background-attachment:fixed]
+                 [background-attachment:fixed]
               `}
-              style={{ backgroundImage: `url(${bgImage})` }}
+              style={{ backgroundImage: `url(${bgImage})`,color: item.color || "#000", }}
             >
               <div className="w-full md:w-1/2 space-y-4">
                 <h1 className="font-serif font-medium text-3xl md:text-6xl">

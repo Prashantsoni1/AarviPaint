@@ -31,16 +31,20 @@ const Gellery = () => {
   ];
 
   const carouselItems = images.map((image, index) => (
-    <div key={index} className="mb-5">
+    <div
+      key={index}
+      data-aos="zoom-in"
+      data-aos-offset="500"
+      className="flex justify-center items-center w-full mb-6 "
+    >
       <img
         src={image}
         alt={`Slide ${index + 1}`}
-        className="w-[250px] md:w-[90%] p-5 h-auto mx-auto"
-        data-aos="zoom-in"
-        data-aos-offset="500"
+        className="w-[90vw] md:w-[275px] h-auto object-contain"
       />
     </div>
   ));
+  
 
   const slidesToSlide = {
     desktop: 3,
@@ -54,7 +58,7 @@ const Gellery = () => {
       style={{ backgroundSize: "cover", backgroundPosition: "center" }}
     >
       {/* Rotated Heading */}
-      <div className="absolute left-[-69px] top-[40%] -rotate-90 origin-left-top z-10">
+      <div className="absolute left-[-50px] md:left-[-69px] top-[40%] -rotate-90 origin-left-top z-10">
         <h1 className="text-white text-[55px] md:text-[75px] leading-0 p-0 font-bold m-0">
           Gallery
         </h1>

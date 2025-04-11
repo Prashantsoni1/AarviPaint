@@ -21,11 +21,16 @@ const Brouser = () => {
   ];
 
   const carouselItems = images.map((image, index) => (
-    <div key={index} data-aos="zoom-in" data-aos-offset="500">
+    <div
+      key={index}
+      data-aos="zoom-in"
+      data-aos-offset="500"
+      className="flex justify-center items-center w-full"
+    >
       <img
         src={image}
         alt={`Slide ${index + 1}`}
-        className="w-[275px] sm:w-[95vw]"
+        className="w-[90vw] md:w-[275px] h-auto object-contain"
       />
     </div>
   ));
@@ -35,10 +40,11 @@ const Brouser = () => {
     tablet: 2,
     mobile: 1,
   };
+  
 
   return (
     <section className="relative z-[999] flex items-center py-[50px] lg:flex-row flex-col-reverse">
-      <div className="absolute -left-[20%] top-0 w-[75%] rotate-[-6deg] hidden lg:block">
+      <div className="absolute left-0 md:left-[-20%]  top-0 w-full md:w-[75%] rotate-[-6deg]  lg:block">
         <img src={bg} alt="Background" className="w-full" />
       </div>
 

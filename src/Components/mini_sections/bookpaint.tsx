@@ -78,7 +78,7 @@ const BookPaint = () => {
 
   return (
     <>
-      <div className="w-[85%] relative rounded-2xl p-0 md:pr-5 my-16 mx-auto flex flex-col md:flex-row items-center bg-gradient-to-br from-[#e7e8ed] via-[#f2c08e] to-[#ebac6d] shadow-lg">
+      <div className="w-[85%] md:w-[85%] relative rounded-2xl p-0 md:pr-5 my-16 mx-auto flex flex-col md:flex-row items-center bg-gradient-to-br from-[#e7e8ed] via-[#f2c08e] to-[#ebac6d] shadow-lg">
         <img
           src={manPainting}
           alt="Man Painting"
@@ -86,7 +86,7 @@ const BookPaint = () => {
         />
 
         <div className="w-full md:w-[65%] p-4">
-          <p className="text-center text-xl md:text-2xl border-b border-black w-full md:w-[53%] mx-auto pt-5">
+          <p className="text-center text-xl md:text-2xl border-b border-black w-[75%] md:w-[53%] mx-auto pt-5">
             Easy Steps to Book Paint Online
           </p>
 
@@ -98,7 +98,7 @@ const BookPaint = () => {
                 data-aos="zoom-in" 
                 data-aos-offset="500"
               >
-                <div className="relative rounded-full border border-black w-18 h-18 md:w-[100px] md:h-[100px] my-6 flex justify-center items-center">
+                <div className="relative rounded-full border border-black w-[70px] h-[70px] md:w-[100px] md:h-[100px] my-6 flex justify-center items-center">
                   <img
                     src={step.image}
                     alt={`Step ${index + 1}`}
@@ -114,7 +114,7 @@ const BookPaint = () => {
           </div>
         </div>
 
-        <div className="relative md:absolute bottom-8 left-0 w-full md:w-auto mb-6 md:mb-0">
+        <div className="relative md:absolute bottom-8 left-0 w-1/2  mx-auto md:w-auto mt-6 md:mb-0">
           <div 
             className="bg-[#ebac6d] shadow-inner h-10 flex items-center pl-5 pr-3 text-black rounded-r-full md:rounded-l-none rounded-full gap-4 md:gap-10 relative overflow-hidden z-50 transition-all duration-300 cursor-pointer hover:bg-[#eea55c] hover:shadow-[#0000004d_4px_4px_12px,_inset_0px_0px_10px_rgba(0,0,0,0.404)]"
             onClick={handleModal}
