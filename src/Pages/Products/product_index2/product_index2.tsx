@@ -92,10 +92,8 @@ const ProductIndex2 = () => {
     if (isMobileView) setShowMobileCategories(false);
   };
 
-  const handleNavigation = (productId?: number) => {
-    // Optional: send productId in route
-    navigate("/products/productDetails");
-    // or with ID: navigate(`/products/productDetails/${productId}`);
+  const handleNavigation = (productId: number) => {
+    navigate(`/products/productDetails/${productId}`);
   };
 
   const handleContactNavigation = () => {
