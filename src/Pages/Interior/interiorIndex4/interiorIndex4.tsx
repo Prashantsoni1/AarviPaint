@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './interiorIndex4.module.css'
 import sideImage from "../../../../public/assets/interior/3d-rendering-loft-scandinavian-living-room-with-working-table-bookshelf 2.png";

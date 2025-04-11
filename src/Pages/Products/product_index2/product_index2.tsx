@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './product_index2.module.css';
 import rightArrow from '../../../../public/assets/product/down-arrow (1) 5.png';

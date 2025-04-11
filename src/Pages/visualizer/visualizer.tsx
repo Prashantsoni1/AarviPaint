@@ -1,5 +1,5 @@
 
-import React from "react";
+// import React from "react";
 import { ThemeProvider } from '@mui/material/styles';
 import theme from "../../theme/theme";
 import VisualizerIndex1 from "./visualizerIndex1/visualizerIndex1";

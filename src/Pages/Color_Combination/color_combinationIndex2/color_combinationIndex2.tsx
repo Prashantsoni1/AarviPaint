@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import Styles from './color_combinationIndex2.module.css';
 

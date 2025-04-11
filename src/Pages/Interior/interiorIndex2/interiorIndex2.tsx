@@ -1,4 +1,3 @@
-import React from "react";
 
 import Styles from './intteriorIndex2.module.css'
 

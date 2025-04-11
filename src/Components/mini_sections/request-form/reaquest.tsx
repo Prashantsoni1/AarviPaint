@@ -1,7 +1,6 @@
-import React, { useState ,FormEvent} from "react";
+import  { useState ,FormEvent} from "react";
 import Styles from "./request.module.css";
-import playstore from "../../../../public/assets/images/playstore.png";
-import appstore from "../../../../public/assets/images/appstore.png";
+
 import phone from "../../../../public/assets/request/reques-side.png";
 import { requestForm } from "../../../types";
 import { requestQuote } from "../../../api/requestQuote";

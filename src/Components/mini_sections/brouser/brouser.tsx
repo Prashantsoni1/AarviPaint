@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import CustomCarousel from "../../mini_sections/carousel";
 import brouser from "../../../../public/assets/brouser/b1.png";
 import brouser2 from "../../../../public/assets/brouser/b2.png";
@@ -10,7 +10,6 @@ import brouser7 from "../../../../public/assets/brouser/b7.png";
 import bg from "../../../../public/assets/images/bg.png";
 
 const Brouser = () => {
-  const [activeStep, setActiveStep] = React.useState(0);
   const images = [
     brouser,
     brouser2,
@@ -20,13 +19,6 @@ const Brouser = () => {
     brouser6,
     brouser7,
   ];
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveStep((prevStep) => (prevStep + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(timer);
-  }, [images.length]);
 
   const carouselItems = images.map((image, index) => (
     <div key={index} data-aos="zoom-in" data-aos-offset="500">

@@ -1,5 +1,5 @@
 
-import React from "react";
+// import React from "react";
 import styles from './contact_index2.module.css';
 import locationIcon from "../../../../public/assets/contact/location 2.png"
 import phoneIcon from "../../../../public/assets/contact/phone-call 2.png"

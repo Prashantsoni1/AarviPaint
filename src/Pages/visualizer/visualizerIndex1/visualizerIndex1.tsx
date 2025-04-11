@@ -1,5 +1,5 @@
 
-import React from "react";
+// import React from "react";
 import Styles from './visualizerIndex1.module.css'
 import background from '../../../../public/assets/color_Combination/contemporary-interior-design-ideas-for-your-home 2.png';
 const VisualizerIndex1 = () => {

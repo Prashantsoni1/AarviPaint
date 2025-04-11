@@ -1,11 +1,10 @@
-import React from "react";
+// import React from "react";
 import Styles from "./interiorIndex3.module.css"; // Importing the CSS module
 import livingRoom from "../../../../public/assets/interior/modern-styled-small-entryway_23-2150712931 1.png";
 import bedroom from  "../../../../public/assets/interior/view-interior-design-space-with-color-year-furnishings-decorations_23-2151397368 2.png";
 import kidsRoom from  "../../../../public/assets/interior/soft-pastel-hues-room-kids_23-2151690399 2.png";
 import bathroom from  "../../../../public/assets/interior/small-bathroom-with-modern-style-ai-generated_23-2150694822 2.png";
 import kitchen from "../../../../public/assets/interior/beautiful-kitchen-interior-design_23-2150976587 2.png";
-import store from "../../../../public/assets/interior/view-interior-design-space-with-color-year-furnishings-decorations_23-2151397368 2.png";
 
 const roomData = [
     {

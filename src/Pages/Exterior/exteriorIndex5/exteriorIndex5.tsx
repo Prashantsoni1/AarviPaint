@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Styles from './exteriorIndex5.module.css';
 import img1 from "../../../../public/assets/exterior/image1.png";
 import img2 from "../../../../public/assets/exterior/image2.png";
@@ -10,7 +10,7 @@ import img7 from "../../../../public/assets/exterior/image7.png";
 import img8 from "../../../../public/assets/exterior/image8.png";
 
 const ExteriorIndex5 = () => {
-    const [images, setImages] = useState([img1, img2, img3, img4, img5, img6, img7, img8]);
+    const [] = useState([img1, img2, img3, img4, img5, img6, img7, img8]);
 
     return (
         <div className={Styles.mainContainer}>

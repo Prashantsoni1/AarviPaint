@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Styles from './exteriorIndex3.module.css'
 const ExteriorIndex3 = () => {
 

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Styles from './exteriorIndex1.module.css'
 import background from "../../../../public/assets/exterior/backgroundIndex1.png"
 const ExteriorIndex1 = () => {

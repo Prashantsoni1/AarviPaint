@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Styles from "./download.module.css";
 import Container from "@mui/material/Container";
 import playstore from "../../../../public/assets/images/playstore.png";

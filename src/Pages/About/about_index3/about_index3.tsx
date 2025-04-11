@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "@fontsource/poppins";
 import Styles from './about_index3.module.css'
 import sideImg from '../../../../public/assets/about/aboutIndex3/man-with-fan .png';

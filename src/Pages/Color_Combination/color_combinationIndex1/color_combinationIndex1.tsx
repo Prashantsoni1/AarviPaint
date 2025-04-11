@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Styles from './color_combinationIndex1.module.css'
 import background from "../../../../public/assets/colorCombination/Group 165.png"
 import sideImg from "../../../../public/assets/colorCombination/man-with-fan 2.png"

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Styles from './productDetail_index3.module.css';
 import img1 from '../../../../../public/assets/product/armchair-green-living-room-with-copy-space (2) 2.png'
 import img2 from '../../../../../public/assets/product/white-sideboard-living-room-interior-with-copy-space 2.png'

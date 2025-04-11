@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import bucketsgroup from "../../../../public/assets/about/aboutIndex1/paintbuckets.png";
 import background from "../../../../public/assets/about/aboutIndex1/Lighting 1.png";
 import "@fontsource/poppins";

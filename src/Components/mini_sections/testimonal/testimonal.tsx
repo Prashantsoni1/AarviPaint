@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import CustomCarousel from "../carousel";
 import testi1 from "../../../../public/assets/testimonial/testi1.png";
 import testi2 from "../../../../public/assets/testimonial/testi2.png";
@@ -9,8 +9,6 @@ import testi6 from "../../../../public/assets/testimonial/testi6.png";
 import bg from "../../../../public/assets/images/bg.png";
 
 const Testimonal = () => {
-  const [activeStep, setActiveStep] = React.useState(0);
-
   const testimonials = [
     {
       image: testi1,
@@ -43,14 +41,6 @@ const Testimonal = () => {
       name: "Anjali Rao",
     },
   ];
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveStep((prevStep) => (prevStep + 1) % testimonials.length);
-    }, 4000);
-
-    return () => clearInterval(timer);
-  }, [testimonials.length]);
 
   const carouselItems = testimonials.map((testimonial, index) => (
     <div key={index} data-aos="zoom-in" data-aos-offset="500">

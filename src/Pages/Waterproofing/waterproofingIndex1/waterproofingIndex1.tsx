@@ -1,5 +1,5 @@
 
-import React from "react";
+// import React from "react";
 import background from "../../../../public/assets/waterproofing/Group 161.png"
 import Styles from './waterproofingIndex1.module.css'
 const WaterproofingIndex1 = () => {

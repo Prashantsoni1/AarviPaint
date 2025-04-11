@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Styles from "./contact_index1.module.css";
 import background from "../../../../public/assets/contact/contact bg 1.png";
 

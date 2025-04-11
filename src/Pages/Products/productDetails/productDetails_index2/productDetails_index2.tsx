@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import { useNavigate } from "react-router-dom";
-import background from '../../../../../public/assets/product/background.png';
+// import background from '../../../../../public/assets/product/background.png';
 import Styles from './productDetails_index2.module.css';
 import img1 from '../../../../../public/assets/product/image 27.png'
 import icon1 from '../../../../../public/assets/product/waterdrop 1.png'

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Styles from "./color_combinationIndex3.module.css";
 import img1 from "../../../../public/assets/colorCombination/armchair-green-living-room-with-copy-space__1_-removebg-preview 1.png";
 import img2 from "../../../../public/assets/colorCombination/3d-contemporary-living-room-interior-modern-furniture_1048-10264-removebg-preview 1.png";

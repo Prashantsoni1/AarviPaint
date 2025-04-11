@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import background from '../../../../../public/assets/product/background.png';
 import Styles from './productDetail_index1.module.css';
 

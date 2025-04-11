@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Styles from './product_index1.module.css';
 import background from '../../../../public/assets/product/background.png';
 const ProductIndex1 = () => { 

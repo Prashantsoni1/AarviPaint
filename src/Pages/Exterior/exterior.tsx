@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { ThemeProvider } from '@mui/material/styles';
 import theme from "../../theme/theme";
 import ExteriorIndex1 from "./exteriorIndex1/exteriorIndex1";

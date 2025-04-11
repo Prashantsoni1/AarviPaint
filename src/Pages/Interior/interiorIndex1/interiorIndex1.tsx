@@ -1,5 +1,4 @@
 
-import React from "react";
 import Styles from './interiorIndex1.module.css'
 import background from "../../../../public/assets/interior/interiorBackground.png"
 const InteriorIndex1 = () => {

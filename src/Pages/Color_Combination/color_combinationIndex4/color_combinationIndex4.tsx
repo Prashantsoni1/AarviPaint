@@ -1,12 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Styles from "./color_combinationIndex4.module.css";
-import wallImage from "../../../../public/assets/color_Combination/image1-6541bf42c0fa4-removebg-preview (1) 2.png";
-import backwardArrow from "../../../../public/assets/color_Combination/return 1.png";
-import forwardArrow from "../../../../public/assets/color_Combination/return 2.png";
-import paint from "../../../../public/assets/color_Combination/paint-brush (1) 1.png";
-import eraser from "../../../../public/assets/color_Combination/school 1.png";
-import plus from "../../../../public/assets/color_Combination/add 1.png";
-import minus from "../../../../public/assets/color_Combination/minus-sign 1.png";
+
 const ColorCombinationIndex4: React.FC = () => {
     const colorCodes: string[] = [
         "FF2020", "E52828", "B71212", "FF7D7D", "FFB9B9", "FFD3D3",

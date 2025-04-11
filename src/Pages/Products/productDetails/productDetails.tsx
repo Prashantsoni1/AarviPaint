@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { ThemeProvider } from '@mui/material/styles';
 import theme from "../../../theme/theme";
 import ProductDetails1 from "./productDetail_index1/productDetail_index1";

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './exteriorIndex2.module.css'
 import sideImage from "../../../../public/assets/exterior/sideImage.png";

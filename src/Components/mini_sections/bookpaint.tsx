@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent } from "react";
 import manPainting from "../../../public/assets/booking_img.png";
 import image1 from "../../../public/assets/house 1 (1).png";
 import image3 from "../../../public/assets/painting-brush 1.png";
