@@ -27,7 +27,7 @@ const ProductDetails2 = () => {
                     </div>
 
                     <div className={Styles.para}>A high sheen, washable wall paint with stain-resistant finish ensures walls look new for a
-                        long time. The paint’s high gloss and even smoother finish would make you want to stare at it
+                        long time. The paint s high gloss and even smoother finish would make you want to stare at it
                         all day.</div>
                     <ul className={Styles.feature}>
                         <li>Smooth and glossy finish</li>

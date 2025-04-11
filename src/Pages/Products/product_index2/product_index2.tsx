@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './product_index2.module.css';
-import rightArrow from '../../../../public/assets/product/down-arrow (1) 5.png';
 
 // Dynamic data structure
 type Product = {
@@ -21,8 +20,7 @@ type Category = {
 };
 
 const ProductIndex2 = () => {
-  // State for products data (could be loaded from an API)
-  const [productsData, setProductsData] = useState<Product[]>([
+  const [productsData] = useState<Product[]>([
     {
       id: 1,
       name: "HD GLOSS PU EMULSION",
@@ -43,11 +41,9 @@ const ProductIndex2 = () => {
       colorCode1: "#C79A19",
       colorCode2: "#D9B84A",
     },
-    // Add more products as needed
   ]);
 
-  // State for categories data
-  const [categoriesData, setCategoriesData] = useState<Category[]>([
+  const [categoriesData] = useState<Category[]>([
     { name: "Emulsion", options: ["Interior & Exterior Both", "Interior Emulsion", "Exterior Emulsion"] },
     { name: "Enamel", options: ["Interior & Exterior Both"] },
     { name: "Primer", options: ["Interior & Exterior Both"] },
@@ -55,7 +51,6 @@ const ProductIndex2 = () => {
     { name: "Waterproofing", options: ["Interior & Exterior Both"] },
   ]);
 
-  // Component state
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
   const [selectedType, setSelectedType] = useState<string>("");
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(productsData);
@@ -63,18 +58,15 @@ const ProductIndex2 = () => {
   const [showMobileCategories, setShowMobileCategories] = useState(false);
   const navigate = useNavigate();
 
-  // Check for mobile view on resize and initial load
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 768);
     };
-    
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Update filtered products when selectedType or productsData changes
   useEffect(() => {
     if (selectedType === "") {
       setFilteredProducts(productsData);
@@ -85,34 +77,25 @@ const ProductIndex2 = () => {
   }, [selectedType, productsData]);
 
   const toggleDropdown = (category: string) => {
-    setOpenDropdowns((prev) => {
-      // If the category is already open, close it
-      if (prev.includes(category)) {
-        return prev.filter((item) => item !== category);
-      } 
-      // Otherwise, close all others and open this one
-      else {
-        return [category];
-      }
-    });
+    setOpenDropdowns((prev) =>
+      prev.includes(category) ? prev.filter((item) => item !== category) : [category]
+    );
   };
 
   const filterProducts = (type: string) => {
     setSelectedType(type);
-    if (isMobileView) {
-      setShowMobileCategories(false); // Close mobile menu after selection
-    }
+    if (isMobileView) setShowMobileCategories(false);
   };
 
   const showAllProducts = () => {
     setSelectedType("");
-    if (isMobileView) {
-      setShowMobileCategories(false); // Close mobile menu after selection
-    }
+    if (isMobileView) setShowMobileCategories(false);
   };
 
   const handleNavigation = (productId?: number) => {
+    // Optional: send productId in route
     navigate("/products/productDetails");
+    // or with ID: navigate(`/products/productDetails/${productId}`);
   };
 
   const handleContactNavigation = () => {
@@ -125,7 +108,6 @@ const ProductIndex2 = () => {
 
   return (
     <div className={`${Styles.main} ${isMobileView ? Styles.mobileMain : ''}`}>
-      {/* Mobile category header */}
       {isMobileView && (
         <div className={Styles.mobileCategoryHeader}>
           <div className={Styles.leftHeading}>Category</div>
@@ -135,7 +117,6 @@ const ProductIndex2 = () => {
         </div>
       )}
 
-      {/* Category sidebar - shown normally on desktop, conditionally on mobile */}
       {(!isMobileView || showMobileCategories) && (
         <div className={`${Styles.category} ${isMobileView ? Styles.mobileCategory : ''}`}>
           <div className={Styles.container}>
@@ -145,8 +126,7 @@ const ProductIndex2 = () => {
                 <div className={Styles.lineleft}></div>
               </>
             )}
-            
-            {/* "All Products" button */}
+
             <div 
               className={`${Styles.categoryItem} ${selectedType === "" ? Styles.selected : ''}`}
               onClick={showAllProducts}
@@ -156,13 +136,12 @@ const ProductIndex2 = () => {
               </div>
             </div>
 
-            {/* Dynamically render categories */}
             {categoriesData.map((category) => (
               <div className={Styles.categoryItem} key={category.name}>
                 <div className={Styles.type} onClick={() => toggleDropdown(category.name)}>
                   <div className={Styles.opt}>{category.name}</div>
                   <div className={`${Styles.downArrow} ${openDropdowns.includes(category.name) ? Styles.rotate : ""}`}>
-                    <img src={rightArrow} alt="→" />
+                    <img src="/assets/product/down-arrow (1) 5.png" alt="→" />
                   </div>
                 </div>
                 {openDropdowns.includes(category.name) && (
@@ -203,9 +182,7 @@ const ProductIndex2 = () => {
                 </div>
               </div>
               <div className={Styles.right}>
-                <div className={Styles.rightHeading1}>
-                  {product.name}
-                </div>
+                <div className={Styles.rightHeading1}>{product.name}</div>
                 <div className={Styles.info}>
                   <div className={Styles.rightHeading2}>{product.type}</div>
                   <div className={Styles.para}>{product.description}</div>
@@ -227,7 +204,7 @@ const ProductIndex2 = () => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default ProductIndex2;
