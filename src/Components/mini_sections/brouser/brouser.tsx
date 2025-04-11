@@ -1,5 +1,4 @@
 import React from "react";
-import Styles from "./brouser.module.css";
 import CustomCarousel from "../../mini_sections/carousel";
 import brouser from "../../../../public/assets/brouser/b1.png";
 import brouser2 from "../../../../public/assets/brouser/b2.png";
@@ -26,17 +25,15 @@ const Brouser = () => {
     const timer = setInterval(() => {
       setActiveStep((prevStep) => (prevStep + 1) % images.length);
     }, 4000);
-
-    return () => {
-      clearInterval(timer);
-    };
+    return () => clearInterval(timer);
   }, [images.length]);
+
   const carouselItems = images.map((image, index) => (
     <div key={index} data-aos="zoom-in" data-aos-offset="500">
       <img
         src={image}
         alt={`Slide ${index + 1}`}
-        className={Styles["slider-image"]}
+        className="w-[275px] sm:w-[95vw]"
       />
     </div>
   ));
@@ -46,26 +43,35 @@ const Brouser = () => {
     tablet: 2,
     mobile: 1,
   };
+
   return (
-    <>
-      <section className={Styles.gellery_main}>
-        <div className={Styles.brouser_container}>
-          <img src={bg} alt="" />
-        </div>
-        <div className={Styles.gellery_slide}>
-          <CustomCarousel
-            items={carouselItems}
-            autoPlay={true}
-            slidesToSlide={slidesToSlide}
-          />
-        </div>
-        <div className={Styles.heading} data-aos="zoom-in" data-aos-offset="500" >
-            <h3>Download</h3>
-          <h1>Our</h1>
-          <h1>Brochure</h1>
-        </div>
-      </section>
-    </>
+    <section className="relative z-[999] flex items-center py-[50px] lg:flex-row flex-col-reverse">
+      <div className="absolute -left-[20%] top-0 w-[75%] rotate-[-6deg] hidden lg:block">
+        <img src={bg} alt="Background" className="w-full" />
+      </div>
+
+      <div className="w-[95%] lg:w-[70%] mx-auto">
+        <CustomCarousel
+          items={carouselItems}
+          autoPlay={true}
+          slidesToSlide={slidesToSlide}
+        />
+      </div>
+
+      <div
+        className="ml-0 lg:ml-5 mt-5 lg:mt-0 text-left"
+        data-aos="zoom-in"
+        data-aos-offset="500"
+      >
+        <h3 className="text-[30px] font-medium text-[#525252] m-0">Download</h3>
+        <h1 className="text-[70px] lg:text-[75px] text-black leading-none m-0">
+          Our
+        </h1>
+        <h1 className="text-[70px] lg:text-[75px] text-black leading-none m-0">
+          Brochure
+        </h1>
+      </div>
+    </section>
   );
 };
 

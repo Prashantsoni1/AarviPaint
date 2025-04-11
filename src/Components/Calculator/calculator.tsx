@@ -1,13 +1,4 @@
 import React from "react";
-import {
-    Box,
-    Container,
-    Typography,
-    Grid,
-    Card,
-    CardMedia,
-    CardContent,
-} from "@mui/material";
 import "@fontsource/rubik-doodle-shadow";
 import "@fontsource/poppins";
 import interiorWallPaint from "../../../public/assets/calculator/interior_Wall_Paint.png";
@@ -45,95 +36,45 @@ const Calculator = () => {
     ];
 
     return (
-        <Container maxWidth="lg" sx={{ py: 8 }} className="card_img">
-            <Box textAlign="center" mb={6}>
-                <div className={styles.heading_calcu}>
-                    {contentData.heading}
-                </div>
-                <Typography
-                    variant="h6"
-                    color="text.secondary"
-                    sx={{
-                        maxWidth: "800px",
-                        mx: "auto",
-                        mb: 6,
-                        fontFamily: "Poppins",
-                        fontSize: 18,
-                    }}
-                >
+        <div className="max-w-7xl mx-auto py-16 px-4 card_img">
+            <div className="text-center mb-12">
+                <div className={styles.heading_calcu}>{contentData.heading}</div>
+                <p className="text-gray-600 text-[18px] max-w-3xl mx-auto font-poppins">
                     {contentData.paragraph}
-                </Typography>
-            </Box>
+                </p>
+            </div>
 
-            <Grid container spacing={4} justifyContent="center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {cardData.map((card, index) => (
-                    <Grid item xs={12} sm={6} md={4} key={index}>
-                        <Card
-                            sx={{
-                                position: "relative",
-                                height: "100%",
-                                display: "flex",
-                                flexDirection: "column",
-                                overflow: "hidden",
-                                borderRadius: 2,
-                            }}
+                    <div key={index} className="relative rounded-2xl overflow-hidden shadow-lg">
+                        <img
+                            src={card.src}
+                            alt={card.alt}
+                            className="w-full h-[450px] object-cover"
+                        />
+
+                        <div
+                            className="absolute top-2 right-4 text-white text-[80px] font-bold"
+                            style={{ fontFamily: "'Rubik Doodle Shadow'" }}
                         >
-                            <CardMedia
-                                component="img"
-                                height="400"
-                                image={card.src}
-                                alt={card.alt}
-                                sx={{ objectFit: "cover" }}
-                            />
+                            {index + 1}
+                        </div>
 
-                            <Box
-                                sx={{
-                                    position: "absolute",
-                                    top: 10,
-                                    right: 10,
-                                    color: "white",
-                                    fontSize: "80px",
-                                    fontWeight: "bold",
-                                    fontFamily: "'Rubik Doodle Shadow'",
-                                }}
-                            >
-                                {index + 1}
-                            </Box>
+                        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/10" />
 
-                            <Box
-                                sx={{
-                                    position: "absolute",
-                                    top: 0,
-                                    left: 0,
-                                    width: "100%",
-                                    height: "100%",
-                                    background:
-                                        "linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.1))",
-                                }}
-                            />
-
-                            <CardContent
-                                sx={{
-                                    position: "absolute",
-                                    bottom: 0,
-                                    color: "white",
-                                    width: "100%",
-                                    textAlign: "center",
-                                }}
-                            >
-                                <Box className={styles.caculator_button}>
-                                    <Box className={styles.overlay} />
-                                    <a href={card.link}>
-                                        <p className={styles.caculator_btn}>{card.title}</p>
-                                        <img src={arrow} alt="arrow" />
-                                    </a>
-                                </Box>
-                            </CardContent>
-                        </Card>
-                    </Grid>
+                        <div className="absolute bottom-0 w-full text-white text-center px-2">
+                            <div className={styles.caculator_button}>
+                                <div className={styles.overlay} />
+                                <a href={card.link}>
+                                    <p className={styles.caculator_btn}>{card.title}</p>
+                                    <img src={arrow} alt="arrow" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 ))}
-            </Grid>
-        </Container>
+            </div>
+        </div>
     );
 };
 

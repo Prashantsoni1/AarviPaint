@@ -34,7 +34,7 @@
   width: 20px;
 }
 .card_img img{
-  height: 100% !important;
+  height: fit-content !important;
 }
 .caculator_button a{
   display: flex;

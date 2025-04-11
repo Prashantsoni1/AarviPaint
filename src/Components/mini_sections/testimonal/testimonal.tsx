@@ -1,5 +1,4 @@
 import React from "react";
-import Styles from "./testimonal.module.css";
 import CustomCarousel from "../carousel";
 import testi1 from "../../../../public/assets/testimonial/testi1.png";
 import testi2 from "../../../../public/assets/testimonial/testi2.png";
@@ -11,7 +10,7 @@ import bg from "../../../../public/assets/images/bg.png";
 
 const Testimonal = () => {
   const [activeStep, setActiveStep] = React.useState(0);
-  
+
   const testimonials = [
     {
       image: testi1,
@@ -50,22 +49,20 @@ const Testimonal = () => {
       setActiveStep((prevStep) => (prevStep + 1) % testimonials.length);
     }, 4000);
 
-    return () => {
-      clearInterval(timer);
-    };
+    return () => clearInterval(timer);
   }, [testimonials.length]);
 
   const carouselItems = testimonials.map((testimonial, index) => (
-    <div key={index}>
-      <div className={Styles.main_testimonial} data-aos="zoom-in" data-aos-offset="500">
+    <div key={index} data-aos="zoom-in" data-aos-offset="500">
+      <div className="bg-white rounded-[20px] shadow-[0_5px_15px_rgba(0,0,0,0.35)] w-[275px] sm:w-[90%] mx-auto mb-[30px]">
         <img
           src={testimonial.image}
           alt={`Slide ${index + 1}`}
-          className={Styles["slider-image"]}
+          className="w-[275px] sm:w-full h-[200px] object-cover rounded-t-[20px]"
         />
-        <div className={Styles.testimonial_discrption}>
-          <p>"{testimonial.text}"</p>
-          <h4>{testimonial.name}</h4>
+        <div className="text-center px-5 py-3">
+          <p className="text-sm">"{testimonial.text}"</p>
+          <h4 className="mt-2 font-semibold">{testimonial.name}</h4>
         </div>
       </div>
     </div>
@@ -78,25 +75,29 @@ const Testimonal = () => {
   };
 
   return (
-    <>
-      <section className={Styles.gellery_main}>
-        <div className={Styles.brouser_container}>
-          <img src={bg} alt="" />
-        </div>
-        <div className={Styles.heading} data-aos="zoom-in" data-aos-offset="500">
-          <h3>What Our</h3>
-          <h1>Customer</h1>
-          <h1>Say!</h1>
-        </div>
-        <div className={Styles.gellery_slide}>
-          <CustomCarousel
-            items={carouselItems}
-            autoPlay={true}
-            slidesToSlide={slidesToSlide}
-          />
-        </div>
-      </section>
-    </>
+    <section className="relative z-[999] flex flex-col lg:flex-row items-center justify-between py-[50px] px-2">
+      <div className="absolute top-0 left-[15%] lg:block hidden w-[75%] rotate-[-6deg]">
+        <img src={bg} alt="Background" className="w-full" />
+      </div>
+
+      <div
+        className="relative text-left mb-6 lg:mb-0 lg:ml-5"
+        data-aos="zoom-in"
+        data-aos-offset="500"
+      >
+        <h3 className="text-[30px] font-medium text-[#525252] m-0">What Our</h3>
+        <h1 className="text-[70px] lg:text-[75px] text-black m-0 leading-none">Customer</h1>
+        <h1 className="text-[70px] lg:text-[75px] text-black m-0 leading-none">Say!</h1>
+      </div>
+
+      <div className="w-full lg:w-[70%]">
+        <CustomCarousel
+          items={carouselItems}
+          autoPlay={true}
+          slidesToSlide={slidesToSlide}
+        />
+      </div>
+    </section>
   );
 };
 
