@@ -43,7 +43,7 @@
 
 
 .allcodesBox {
-    width: 844px;
+    width: auto;
     height: 440px;
     overflow: auto;
     display: flex;

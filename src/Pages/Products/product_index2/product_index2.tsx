@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from './product_index2.module.css';
 
-// Dynamic data structure
 type Product = {
   id: number;
   name: string;
@@ -89,13 +88,17 @@ const ProductIndex2 = () => {
 
   const showAllProducts = () => {
     setSelectedType("");
-    if (isMobileView) setShowMobileCategories(false);
+    if (isMobileView) setShowMobileCategories(false); 
   };
 
-  const handleNavigation = (productId: number) => {
-    navigate(`/products/productDetails/${productId}`);
+  // const handleNavigation = (product: Product) => {
+  //   navigate(`/products/productDetails/${product.id}`, { state: product });
+  //   navigate(`/products/productDetails`);
+  // };
+  const handleNavigation = () => {
+    // navigate(`/products/productDetails/${product.id}`, { state: product });
+    navigate(`/products/productDetails`);
   };
-
   const handleContactNavigation = () => {
     navigate("/contact");
   };
@@ -193,8 +196,11 @@ const ProductIndex2 = () => {
                     ))}
                   </ul>
                 </div>
+                {/* <div className={Styles.btnDiv}>
+                  <button className={Styles.btn2} onClick={() => handleNavigation(product)}>Know More</button>
+                </div> */}
                 <div className={Styles.btnDiv}>
-                  <button className={Styles.btn2} onClick={() => handleNavigation(product.id)}>Know More</button>
+                  <button className={Styles.btn2} onClick={() => handleNavigation()}>Know More</button>
                 </div>
               </div>
             </div>
